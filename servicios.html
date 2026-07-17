@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Servicios de Movilidad y Transporte | ExpressGO</title>
+  <meta name="description" content="Conoce los servicios de ExpressGO: Express Cargo, Express Mujer, PetTrip, MovePack y Escapia. Soluciones de movilidad y transporte mediante furgonetas.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="servicios.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Sticky Navbar (Header) -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="nav-logo" aria-label="ExpressGO Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        <span>ExpressGO</span><span class="logo-dot"></span>
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Menú principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+          <li><a href="conductores.html" class="nav-link">Conductores</a></li>
+          <li><a href="comunidad.html" class="nav-link">Comunidad</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Header CTAs -->
+      <div class="nav-actions">
+        <a href="index.html#rutas" class="btn btn-secondary" id="nav-search-btn">Buscar Ruta</a>
+        <a href="index.html#registro" class="btn btn-primary" id="nav-register-btn">Registrarse</a>
+      </div>
+      
+      <!-- Mobile Menu Trigger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-controls="mobile-drawer" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Off-canvas Navigation Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer" aria-label="Menú móvil">
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+      <li><a href="conductores.html" class="nav-link">Conductores</a></li>
+      <li><a href="comunidad.html" class="nav-link">Comunidad</a></li>
+      <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index.html#rutas" class="btn btn-secondary">Buscar Ruta</a>
+      <a href="index.html#registro" class="btn btn-primary">Registrarse</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main style="padding-top: 84px;">
+    
+    <!-- Services Hero Section -->
+    <section class="services-hero bg-dark-gradient bg-dark-grid">
+      <div class="glow-green" style="top: 10%; right: 10%;"></div>
+      <div class="container services-hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">SERVICIOS EXPRESSGO</span>
+          <h1 class="text-gradient-green">Servicios de movilidad para cada necesidad.</h1>
+          <p class="description">ExpressGO integra soluciones especializadas para personas, mascotas, empresas, paquetes y viajes grupales mediante una plataforma tecnológica y una red de furgonetas preparadas.</p>
+          <div class="hero-buttons">
+            <a href="index.html#rutas" class="btn btn-primary">Buscar Ruta</a>
+            <a href="index.html#registro" class="btn btn-secondary">Registrarse</a>
+          </div>
+        </div>
+        
+        <!-- Collage visual mockup -->
+        <div class="services-collage-wrapper reveal" style="transition-delay: 200ms;">
+          <div class="collage-container">
+            <!-- Collage item 1: Furgoneta -->
+            <div class="collage-item furgoneta" aria-label="Furgoneta moderna ExpressGO">
+              <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+                <rect width="160" height="100" fill="#12191F" rx="12" stroke="rgba(255,255,255,0.05)" />
+                <path d="M 20,70 L 140,70 L 130,35 L 50,35 Z" fill="#8CBF26" />
+                <rect x="52" y="38" width="22" height="15" fill="#0E1A2B" />
+                <rect x="78" y="38" width="22" height="15" fill="#0E1A2B" />
+                <circle cx="45" cy="72" r="12" fill="#0B0F14" />
+                <circle cx="115" cy="72" r="12" fill="#0B0F14" />
+              </svg>
+            </div>
+            <!-- Collage item 2: Conductora / Mujer -->
+            <div class="collage-item conductora" aria-label="Conductora profesional Express Mujer">
+              <span class="collage-icon">👩‍✈️</span>
+              <span class="collage-text">Express Mujer</span>
+            </div>
+            <!-- Collage item 3: Mascota -->
+            <div class="collage-item mascota" aria-label="Mascotas PetTrip">
+              <span class="collage-icon">🐶🐾</span>
+              <span class="collage-text">PetTrip</span>
+            </div>
+            <!-- Collage item 4: Paquetes -->
+            <div class="collage-item paquetes" aria-label="Paquetes Express Cargo">
+              <span class="collage-icon">📦💼</span>
+              <span class="collage-text">Cargo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Service Index Bar -->
+    <div class="services-index-bar" id="services-index-bar">
+      <div class="container index-bar-container">
+        <span class="index-bar-title">Explora nuestros servicios:</span>
+        <ul class="index-bar-links">
+          <li><a href="#express-cargo" class="index-bar-link active"><i data-lucide="package-check"></i> Cargo</a></li>
+          <li><a href="#express-mujer" class="index-bar-link"><i data-lucide="venus"></i> Mujer</a></li>
+          <li><a href="#pettrip" class="index-bar-link"><i data-lucide="paw-print"></i> PetTrip</a></li>
+          <li><a href="#movepack" class="index-bar-link"><i data-lucide="boxes"></i> MovePack</a></li>
+          <li><a href="#escapia" class="index-bar-link"><i data-lucide="palmtree"></i> Escapia</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 1. Service: Express Cargo -->
+    <section class="service-detail-section bg-dark" id="express-cargo">
+      <div class="container service-detail-grid">
+        <div class="service-detail-info reveal">
+          <span class="eyebrow">ENVÍOS PARA EMPRESAS Y COMERCIOS</span>
+          <h2>Express Cargo</h2>
+          <p class="service-headline">Tus paquetes avanzan con rutas organizadas.</p>
+          <p class="service-intro">Express Cargo es un servicio dirigido a distribuidores, comercios y empresas que necesitan enviar paquetes, documentos o productos de forma eficiente entre sucursales, clientes y puntos de entrega.</p>
+          <div class="service-main-benefit">
+            <strong>Beneficio Principal:</strong> Permite realizar entregas organizadas, rápidas y seguras mediante furgonetas, con información detallada del recorrido y seguimiento completo.
+          </div>
+          
+          <div class="service-checklist-grid">
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="route"></i></div>
+              <div>
+                <h5>Rutas organizadas</h5>
+                <p>Los envíos se agrupan y planifican para aprovechar mejor cada recorrido.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="map-pinned"></i></div>
+              <div>
+                <h5>Seguimiento del trayecto</h5>
+                <p>Consulta la información disponible del recorrido y del servicio.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="building-2"></i></div>
+              <div>
+                <h5>Solución empresarial</h5>
+                <p>Ideal para distribuidores, tiendas, oficinas y negocios con entregas frecuentes.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="shield-check"></i></div>
+              <div>
+                <h5>Mayor seguridad</h5>
+                <p>Los paquetes se registran y transportan mediante servicios programados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-cases">
+            <strong>Casos de uso comunes:</strong>
+            <ul class="cases-list">
+              <li><i data-lucide="circle-dot"></i> Entrega de documentos</li>
+              <li><i data-lucide="circle-dot"></i> Distribución de productos comerciales</li>
+              <li><i data-lucide="circle-dot"></i> Envíos recurrentes entre sucursales</li>
+              <li><i data-lucide="circle-dot"></i> Paquetes pequeños para clientes finales</li>
+              <li><i data-lucide="circle-dot"></i> Reposición de inventario ligero</li>
+            </ul>
+          </div>
+
+          <a href="contacto.html?servicio=express-cargo" class="btn btn-primary">Solicitar Express Cargo</a>
+        </div>
+        
+        <!-- Illustration/Image Column -->
+        <div class="service-detail-visual reveal" style="transition-delay: 200ms;">
+          <svg class="service-svg-graphic" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#12191F" rx="20" />
+            <!-- Map mesh background -->
+            <path d="M 0,50 L 400,50 M 0,150 L 400,150 M 0,250 L 400,250 M 100,0 L 100,300 M 200,0 L 200,300 M 300,0 L 300,300" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+            <!-- Route line -->
+            <path d="M 60,240 C 120,240 100,80 220,80 L 340,80" fill="none" stroke="#8CBF26" stroke-width="4" stroke-linecap="round"/>
+            <!-- Packages and van representation -->
+            <g transform="translate(240, 60)">
+              <rect x="0" y="0" width="80" height="45" rx="6" fill="#182127" stroke="#8CBF26" stroke-width="2"/>
+              <rect x="52" y="8" width="16" height="28" rx="2" fill="#8CBF26" />
+              <circle cx="20" cy="45" r="8" fill="#0B0F14" />
+              <circle cx="60" cy="45" r="8" fill="#0B0F14" />
+            </g>
+            <!-- Box packages overlay -->
+            <g transform="translate(80, 160)">
+              <rect x="0" y="15" width="40" height="40" rx="4" fill="#A8F23C" />
+              <rect x="25" y="0" width="30" height="30" rx="3" fill="#8CBF26" />
+              <line x1="0" y1="35" x2="40" y2="35" stroke="#0E1A2B" stroke-width="2" />
+              <line x1="25" y1="15" x2="55" y2="15" stroke="#0E1A2B" stroke-width="2" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Service: Express Mujer -->
+    <section class="service-detail-section bg-surface" id="express-mujer">
+      <div class="container service-detail-grid alternate">
+        <div class="service-detail-info reveal">
+          <span class="eyebrow">MOVILIDAD EXCLUSIVA PARA MUJERES</span>
+          <h2>Express Mujer</h2>
+          <p class="service-headline">Mujeres conduciendo. Mujeres viajando.</p>
+          <p class="service-intro">Express Mujer es una alternativa exclusiva de transporte donde tanto las conductoras como las pasajeras son únicamente mujeres, asegurando un entorno cómodo y afín.</p>
+          <div class="service-main-benefit">
+            <strong>Beneficio Principal:</strong> Ofrece una experiencia de movilidad orientada a brindar mayor seguridad, confianza, cercanía y comodidad durante cada trayecto en furgoneta.
+          </div>
+          
+          <div class="service-checklist-grid">
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="user-round-check"></i></div>
+              <div>
+                <h5>Conductoras mujeres</h5>
+                <p>Todos los viajes de este servicio son realizados exclusivamente por conductoras.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="users-round"></i></div>
+              <div>
+                <h5>Pasajeras mujeres</h5>
+                <p>El servicio está reservado exclusivamente para pasajeras.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="shield-check"></i></div>
+              <div>
+                <h5>Mayor confianza</h5>
+                <p>Una alternativa diseñada para crear un entorno de movilidad más cercano y seguro.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="heart-handshake"></i></div>
+              <div>
+                <h5>Comunidad</h5>
+                <p>Fortalece una red de conductoras y pasajeras dentro del ecosistema ExpressGO.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-cases">
+            <strong>Casos de uso comunes:</strong>
+            <ul class="cases-list">
+              <li><i data-lucide="circle-dot"></i> Traslados al trabajo diarios</li>
+              <li><i data-lucide="circle-dot"></i> Viajes frecuentes hacia universidades</li>
+              <li><i data-lucide="circle-dot"></i> Rutas compartidas programadas</li>
+              <li><i data-lucide="circle-dot"></i> Traslados grupales de mujeres y compañeras</li>
+            </ul>
+          </div>
+
+          <a href="contacto.html?servicio=express-mujer" class="btn btn-primary">Solicitar Express Mujer</a>
+        </div>
+        
+        <!-- Illustration Column (Strictly women, no men) -->
+        <div class="service-detail-visual reveal" style="transition-delay: 200ms;">
+          <svg class="service-svg-graphic" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#182127" rx="20" />
+            <!-- Soft green radial glows -->
+            <circle cx="200" cy="150" r="100" fill="#8CBF26" fill-opacity="0.05" />
+            <!-- Women passengers and driver profile graphics -->
+            <g transform="translate(110, 100)">
+              <!-- Woman Driver (profile outline) -->
+              <circle cx="50" cy="50" r="28" fill="#8CBF26" />
+              <!-- Hair details -->
+              <path d="M 22,50 Q 50,15 78,50 A 28,28 0 0,1 22,50" fill="#0E1A2B" />
+              <!-- Shield Check overlay -->
+              <circle cx="70" cy="65" r="12" fill="#A8F23C" stroke="#182127" stroke-width="2" />
+              <text x="70" y="69" font-family="sans-serif" font-size="10" font-weight="bold" fill="#0E1A2B" text-anchor="middle">✓</text>
+            </g>
+            <g transform="translate(210, 110)">
+              <!-- Woman Passenger -->
+              <circle cx="50" cy="50" r="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+              <path d="M 26,50 Q 50,20 74,50" fill="none" stroke="#A8F23C" stroke-width="2"/>
+              <text x="50" y="58" font-family="sans-serif" font-size="24" fill="#fff" text-anchor="middle">👩</text>
+            </g>
+            <!-- Route path -->
+            <path d="M 50,220 L 350,220" stroke="rgba(255,255,255,0.05)" stroke-width="2" stroke-dasharray="6 6"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Service: PetTrip -->
+    <section class="service-detail-section bg-dark" id="pettrip">
+      <div class="container service-detail-grid">
+        <div class="service-detail-info reveal">
+          <span class="eyebrow">TRANSPORTE PROGRAMADO PARA MASCOTAS</span>
+          <h2>PetTrip</h2>
+          <p class="service-headline">Movilidad segura exclusivamente para mascotas.</p>
+          <p class="service-intro">PetTrip es un servicio diseñado para el traslado autónomo de mascotas hacia hoteles para animales, guarderías y residencias especializadas con horarios establecidos.</p>
+          
+          <div class="service-main-benefit">
+            <strong>Beneficio Principal:</strong> Las furgonetas cuentan con espacios acondicionados para que las mascotas viajen de forma cómoda y segura, sin que el dueño tenga que viajar con ellas.
+          </div>
+          
+          <div class="service-warning-box">
+            <i data-lucide="alert-triangle"></i>
+            <span><strong>Aclaración importante:</strong> PetTrip transporta <strong>únicamente mascotas</strong>. No transporta a sus propietarios ni combina el recorrido con pasajeros humanos. El servicio opera bajo horarios programados de entrada/salida y <strong>no aplica</strong> para veterinarias de emergencia o peluquerías caninas con tiempos de espera variables.</span>
+          </div>
+
+          <div class="service-checklist-grid">
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="calendar-clock"></i></div>
+              <div>
+                <h5>Horarios programados</h5>
+                <p>Recorridos coordinados de acuerdo con los horarios fijos del establecimiento.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="dog"></i></div>
+              <div>
+                <h5>Exclusivo para mascotas</h5>
+                <p>El traslado está diseñado únicamente para animales, sin pasajeros a bordo.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="shield-check"></i></div>
+              <div>
+                <h5>Traslado seguro</h5>
+                <p>Las mascotas viajan dentro de guacales o transportadoras seguras en áreas adecuadas.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="warehouse"></i></div>
+              <div>
+                <h5>Destinos específicos</h5>
+                <p>Guarderías, hoteles para mascotas y establecimientos con horarios de salida fijos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-cases">
+            <strong>Casos de uso admitidos:</strong>
+            <ul class="cases-list">
+              <li><i data-lucide="circle-dot"></i> Traslado matutino desde el hogar hacia una guardería</li>
+              <li><i data-lucide="circle-dot"></i> Recogida vespertina desde la guardería de regreso al hogar</li>
+              <li><i data-lucide="circle-dot"></i> Traslado programado a hoteles para mascotas</li>
+            </ul>
+            
+            <strong style="margin-top: 15px; display: inline-block;">Servicios NO soportados:</strong>
+            <ul class="cases-list" style="opacity: 0.7;">
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> Transporte del dueño o propietarios junto a la mascota</li>
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> Traslados a peluquerías con tiempos variables de atención</li>
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> Consultas veterinarias sin cita u horario de salida predefinido</li>
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> Servicios de urgencia médica o traslados improvisados</li>
+            </ul>
+          </div>
+
+          <a href="contacto.html?servicio=pettrip" class="btn btn-primary">Programar PetTrip</a>
+        </div>
+        
+        <!-- Illustration Column (Pets only, no owners) -->
+        <div class="service-detail-visual reveal" style="transition-delay: 200ms;">
+          <svg class="service-svg-graphic" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#12191F" rx="20" />
+            <path d="M 0,80 L 400,80 M 0,220 L 400,220" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+            <!-- Pet Box Carrier mockup inside van -->
+            <g transform="translate(120, 90)">
+              <rect x="0" y="0" width="160" height="110" rx="10" fill="#182127" stroke="#8CBF26" stroke-width="2" />
+              <!-- Cage metal grill -->
+              <line x1="30" y1="20" x2="30" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="3" />
+              <line x1="50" y1="20" x2="50" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="3" />
+              <line x1="70" y1="20" x2="70" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="3" />
+              <line x1="90" y1="20" x2="90" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="3" />
+              <line x1="110" y1="20" x2="110" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="3" />
+              <line x1="130" y1="20" x2="130" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="3" />
+              
+              <circle cx="80" cy="55" r="32" fill="#8CBF26" fill-opacity="0.1"/>
+              <!-- Dog face icon inside carrier -->
+              <text x="80" y="65" font-family="sans-serif" font-size="32" text-anchor="middle">🐶</text>
+            </g>
+            <span class="badge-savings" style="position: absolute; bottom: 30px; left: 30px; background: rgba(14, 26, 43, 0.9); color:#A8F23C;">Exclusivo Mascotas</span>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Service: MovePack -->
+    <section class="service-detail-section bg-surface" id="movepack">
+      <div class="container service-detail-grid alternate">
+        <div class="service-detail-info reveal">
+          <span class="eyebrow">TRANSPORTE DE EQUIPAJE Y OBJETOS</span>
+          <h2>MovePack</h2>
+          <p class="service-headline">Más espacio para mover lo que necesitas.</p>
+          <p class="service-intro">MovePack es el servicio ideal para personas que necesitan trasladar equipajes, maletas pesadas, cajas o artículos voluminosos aprovechando la gran capacidad física de nuestras furgonetas.</p>
+          <div class="service-main-benefit">
+            <strong>Beneficio Principal:</strong> Aprovecha el amplio espacio de carga interior de las furgonetas ExpressGO para trasladar bultos cómodamente, sin entorpecer la cabina de pasajeros.
+          </div>
+          
+          <div class="service-checklist-grid">
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="luggage"></i></div>
+              <div>
+                <h5>Equipaje y maletas</h5>
+                <p>Ideal para traslados con equipajes de viaje y maletines de gran tamaño.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="shopping-bag"></i></div>
+              <div>
+                <h5>Compras de gran volumen</h5>
+                <p>Transporta artículos adquiridos en tiendas que no caben en un automóvil.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="package-open"></i></div>
+              <div>
+                <h5>Cajas y objetos</h5>
+                <p>Moviliza cajas personales de cartón o plástico bajo la capacidad permitida.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="truck"></i></div>
+              <div>
+                <h5>Espacio de furgoneta</h5>
+                <p>Vehículos amplios acondicionados para organizar la carga de manera eficiente.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-cases">
+            <strong>Casos de uso recomendados:</strong>
+            <ul class="cases-list">
+              <li><i data-lucide="circle-dot"></i> Traslado de equipaje hacia aeropuertos o terminales</li>
+              <li><i data-lucide="circle-dot"></i> Compras grandes para el hogar o el negocio</li>
+              <li><i data-lucide="circle-dot"></i> Cajas personales de mudanza pequeña</li>
+              <li><i data-lucide="circle-dot"></i> Enseres voluminosos autorizados previamente</li>
+            </ul>
+            
+            <strong style="margin-top: 15px; display: inline-block;">Restricciones del servicio:</strong>
+            <ul class="cases-list" style="opacity: 0.7;">
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> Prohibido el traslado de materiales inflamables o peligrosos</li>
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> No se permite el transporte de mercancías ilícitas</li>
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> El peso total no debe exceder los límites técnicos de la furgoneta</li>
+              <li><i data-lucide="x-circle" style="color: #EF4444;"></i> Todos los bultos deben ser declarados al momento de reservar</li>
+            </ul>
+          </div>
+
+          <a href="contacto.html?servicio=movepack" class="btn btn-primary">Solicitar MovePack</a>
+        </div>
+        
+        <!-- Illustration Column -->
+        <div class="service-detail-visual reveal" style="transition-delay: 200ms;">
+          <svg class="service-svg-graphic" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#182127" rx="20" />
+            <!-- Grid roads in background -->
+            <path d="M 50,0 L 50,300 M 350,0 L 350,300" stroke="rgba(255,255,255,0.01)" stroke-width="4" />
+            <!-- Luggage stack representation -->
+            <g transform="translate(100, 100)">
+              <rect x="0" y="40" width="80" height="60" rx="8" fill="#8CBF26" />
+              <rect x="20" y="25" width="40" height="15" rx="3" fill="#0E1A2B" stroke="#8CBF26" stroke-width="2"/>
+              <rect x="35" y="10" width="10" height="15" rx="2" fill="#A8F23C" />
+              <!-- Small suitcase -->
+              <rect x="100" y="55" width="60" height="45" rx="6" fill="#A8F23C" />
+              <rect x="115" y="45" width="30" height="10" rx="2" fill="#0E1A2B" stroke="#A8F23C" stroke-width="2"/>
+            </g>
+            <!-- Furgoneta outline -->
+            <path d="M 60,260 L 340,260" stroke="#8CBF26" stroke-width="4" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Service: Escapia -->
+    <section class="service-detail-section bg-dark" id="escapia">
+      <div class="container service-detail-grid">
+        <div class="service-detail-info reveal">
+          <span class="eyebrow">VIAJES Y ESCAPADAS GRUPALES</span>
+          <h2>Escapia</h2>
+          <p class="service-headline">Tu próxima escapada comienza en grupo.</p>
+          <p class="service-intro">Escapia es la solución pensada para viajes de placer, turismo interno y salidas planificadas los fines de semana, permitiendo viajar a todo tu grupo en una misma furgoneta.</p>
+          <div class="service-main-benefit">
+            <strong>Beneficio Principal:</strong> Facilita el transporte de grupos hacia destinos recreativos mediante furgonetas programadas, eliminando la necesidad de conducir o coordinar varios vehículos pequeños.
+          </div>
+          
+          <div class="service-checklist-grid">
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="users-round"></i></div>
+              <div>
+                <h5>Viajes grupales</h5>
+                <p>Permite trasladar grupos completos cómodamente dentro de la misma furgoneta.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="map"></i></div>
+              <div>
+                <h5>Destinos turísticos</h5>
+                <p>Planifica traslados hacia sitios recreativos, culturales, playas o reservas naturales.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="calendar-days"></i></div>
+              <div>
+                <h5>Planificación anticipada</h5>
+                <p>Organiza previamente la fecha de salida, la hora de recogida y el retorno del grupo.</p>
+              </div>
+            </div>
+            <div class="service-check-item">
+              <div class="check-icon"><i data-lucide="armchair"></i></div>
+              <div>
+                <h5>Mayor comodidad</h5>
+                <p>Disfruta del viaje con aire acondicionado, asientos reclinables y amplio maletero.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-cases">
+            <strong>Casos de uso sugeridos:</strong>
+            <ul class="cases-list">
+              <li><i data-lucide="circle-dot"></i> Escapadas de fin de semana con amigos</li>
+              <li><i data-lucide="circle-dot"></i> Viajes turísticos hacia playas y parques nacionales de Ecuador</li>
+              <li><i data-lucide="circle-dot"></i> Visitas culturales y paseos familiares programados</li>
+              <li><i data-lucide="circle-dot"></i> Traslados para caminatas, deportes de aventura o actividades campestres</li>
+            </ul>
+          </div>
+
+          <a href="contacto.html?servicio=escapia" class="btn btn-primary">Planificar una Escapia</a>
+        </div>
+        
+        <!-- Illustration Column -->
+        <div class="service-detail-visual reveal" style="transition-delay: 200ms;">
+          <svg class="service-svg-graphic" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#12191F" rx="20" />
+            <!-- Nature setting / Mountains -->
+            <path d="M 50,220 Q 150,120 220,180 T 350,150 L 350,220 L 50,220 Z" fill="rgba(140, 191, 38, 0.08)"/>
+            <path d="M 120,220 Q 220,90 280,160 T 400,130 L 400,220 L 120,220 Z" fill="rgba(140, 191, 38, 0.04)"/>
+            <!-- Palm tree icon mockup -->
+            <g transform="translate(300, 80)">
+              <path d="M 10,80 Q 25,40 10,0" fill="none" stroke="#8CBF26" stroke-width="4"/>
+              <path d="M 10,0 Q -10,-10 -20,10 Q -10,-15 10,0 Q 20,-10 30,10 Q 10,-15 10,0" fill="#A8F23C" />
+            </g>
+            <!-- Furgoneta on road -->
+            <path d="M 30,220 L 370,220" stroke="#A8F23C" stroke-width="3" />
+            <g transform="translate(140, 185)">
+              <rect x="0" y="0" width="80" height="30" rx="5" fill="#8CBF26"/>
+              <circle cx="20" cy="30" r="8" fill="#0B0F14"/>
+              <circle cx="60" cy="30" r="8" fill="#0B0F14"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding bg-dark-grid final-services-cta">
+      <div class="container text-center reveal">
+        <span class="eyebrow">ENCUENTRA EL SERVICIO IDEAL</span>
+        <h2 class="section-title">¿Qué necesitas movilizar?</h2>
+        <p class="section-description centered">Cuéntanos qué servicio necesitas y nuestro equipo revisará tu solicitud para coordinar tu viaje o envío en furgoneta.</p>
+        <div class="hero-buttons" style="justify-content: center;">
+          <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+          <a href="index.html#registro" class="btn btn-secondary">Registrarse</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span>ExpressGO</span><span class="logo-dot"></span>
+          </a>
+          <p style="font-size: 14px; color: var(--color-gray); line-height: 1.6;">ExpressGO es una APP de movilidad inteligente que conecta pasajeros, furgonetas y empresas mediante rutas optimizadas en Ecuador.</p>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook ExpressGO" target="_blank" rel="noopener"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+            <a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram ExpressGO" target="_blank" rel="noopener"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+            <a href="https://www.tiktok.com" class="social-icon-btn" aria-label="TikTok ExpressGO" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="https://www.linkedin.com" class="social-icon-btn" aria-label="LinkedIn ExpressGO" target="_blank" rel="noopener"><i data-lucide="linkedin" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Movilidad</span>
+          <ul class="footer-links">
+            <li><a href="index.html#nosotros">Qué es ExpressGO</a></li>
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Servicios</span>
+          <ul class="footer-links">
+            <li><a href="index.html#taxi-ruta">Taxi Ruta Inteligente</a></li>
+            <li><a href="servicios.html#express-cargo">Express Cargo</a></li>
+            <li><a href="servicios.html#express-mujer">Express Mujer</a></li>
+            <li><a href="servicios.html#pettrip">PetTrip</a></li>
+            <li><a href="servicios.html#movepack">MovePack</a></li>
+            <li><a href="servicios.html#escapia">Escapia</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <ul class="footer-links">
+            <li><a href="#footer">Política de privacidad</a></li>
+            <li><a href="#footer">Términos y condiciones</a></li>
+            <li><a href="#footer">Uso de datos personales</a></li>
+            <li><a href="#footer">Política de cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2026 ExpressGO. Todos los derechos reservados.</span>
+        <span style="font-size: 13px; color: var(--color-gray);">Quito - Guayaquil - Cuenca - Manta, Ecuador</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Support Widget -->
+  <div class="support-widget" id="support-widget">
+    <div class="support-tooltip">¿Necesitas ayuda?</div>
+    <button class="support-btn" id="support-btn" aria-label="Abrir soporte técnico" aria-haspopup="true" aria-expanded="false">
+      <i data-lucide="circle-help"></i>
+    </button>
+    
+    <!-- Support Panel -->
+    <div class="support-panel" id="support-panel" aria-hidden="true">
+      <div class="support-panel-header">
+        <h3>Soporte ExpressGO</h3>
+        <button class="support-panel-close" id="support-panel-close" aria-label="Cerrar soporte">&times;</button>
+      </div>
+      <div class="support-panel-body">
+        <!-- Step 1: Support Categories -->
+        <div class="support-options-list" id="support-options-list">
+          <p style="font-size: 14px; margin-bottom: 16px; color: var(--color-text-light);">Selecciona el tipo de ayuda que necesitas:</p>
+          <button class="support-option-btn" data-category="ruta">
+            <i data-lucide="route"></i>
+            <span>Dudas sobre una ruta</span>
+          </button>
+          <button class="support-option-btn" data-category="registro">
+            <i data-lucide="user-round"></i>
+            <span>Problemas con mi registro</span>
+          </button>
+          <button class="support-option-btn" data-category="tecnico">
+            <i data-lucide="wrench"></i>
+            <span>Soporte técnico</span>
+          </button>
+          <button class="support-option-btn" data-category="general">
+            <i data-lucide="message-circle-question"></i>
+            <span>Consulta general</span>
+          </button>
+        </div>
+        
+        <!-- Step 2: Support Form -->
+        <div class="support-form-container" id="support-form-container">
+          <button class="support-back-btn" id="support-back-btn"><i data-lucide="chevron-left" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i> Volver</button>
+          <h4 id="support-category-title">Consulta</h4>
+          <form id="support-internal-form">
+            <input type="hidden" id="support-category-hidden" value="general">
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+              <div class="input-group">
+                <label for="sup-name" style="font-size: 11px;">Nombre</label>
+                <input type="text" id="sup-name" class="input-field" style="padding: 8px 12px;" placeholder="Tu nombre" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-email" style="font-size: 11px;">Correo electrónico</label>
+                <input type="email" id="sup-email" class="input-field" style="padding: 8px 12px;" placeholder="correo@ejemplo.com" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-phone" style="font-size: 11px;">Teléfono</label>
+                <input type="tel" id="sup-phone" class="input-field" style="padding: 8px 12px;" placeholder="Ej: 0987654321" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-user-type" style="font-size: 11px;">Tipo de usuario</label>
+                <select id="sup-user-type" class="input-field" style="padding: 8px 12px; height: 42px;">
+                  <option value="pasajero">Pasajero</option>
+                  <option value="conductor">Conductor</option>
+                  <option value="empresa">Empresa</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="sup-desc" style="font-size: 11px;">Descripción del problema</label>
+                <textarea id="sup-desc" class="input-field" style="padding: 8px 12px; min-height: 80px; resize: vertical;" placeholder="Describe tu problema o consulta..." required></textarea>
+              </div>
+              <div class="input-group">
+                <label for="sup-file" style="font-size: 11px;">Adjuntar captura (opcional)</label>
+                <input type="file" id="sup-file" class="input-field" style="padding: 6px 12px; font-size: 12px;" accept="image/*">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; min-height: 40px; padding: 10px;">Enviar solicitud</button>
+          </form>
+          
+          <!-- Success State -->
+          <div class="form-success-message" id="support-success-message">
+            <div class="form-success-icon" style="width: 48px; height: 48px; margin-bottom: 16px;"><i data-lucide="check-circle-2"></i></div>
+            <h3 style="font-size: 18px; margin-bottom: 8px;">¡Solicitud enviada!</h3>
+            <p style="font-size: 13px; line-height: 1.5; color: var(--color-text-light);">Recibimos tu solicitud. El equipo de ExpressGO se pondrá en contacto contigo.</p>
+            <button type="button" class="btn btn-secondary" id="support-reset-btn" style="min-height: 36px; padding: 8px 16px; font-size: 12px;">Nueva consulta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="servicios.js"></script>
+</body>
+</html>

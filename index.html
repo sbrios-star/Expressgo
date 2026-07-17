@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>ExpressGO | Taxi Ruta Inteligente y Transporte Compartido</title>
+  <meta name="description" content="Reserva viajes compartidos con ExpressGO, la APP de Taxi Ruta Inteligente y Transporte Compartido que conecta pasajeros, conductores y empresas mediante rutas optimizadas, seguras y económicas.">
+  <link rel="canonical" href="https://www.expressgo.com.ec/">
+  
+  <!-- OpenGraph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="ExpressGO | Taxi Ruta Inteligente y Transporte Compartido">
+  <meta property="og:description" content="Reserva viajes compartidos mediante rutas optimizadas y seguras en Ecuador. Ahorra tiempo y dinero con ExpressGO.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.expressgo.com.ec/">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ExpressGO",
+      "url": "https://www.expressgo.com.ec/",
+      "logo": "https://www.expressgo.com.ec/assets/logo.png",
+      "description": "APP de movilidad inteligente que conecta pasajeros, conductores y empresas mediante rutas organizadas y transporte compartido.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "EC"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ExpressGO",
+      "url": "https://www.expressgo.com.ec/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ExpressGO APP",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "TravelApplication",
+      "description": "APP de movilidad inteligente y Taxi Ruta Inteligente."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Taxi Ruta Inteligente y Transporte Compartido",
+      "provider": {
+        "@type": "Organization",
+        "name": "ExpressGO"
+      },
+      "areaServed": "Ecuador"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es Taxi Ruta Inteligente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es el servicio principal de ExpressGO. Organiza pasajeros con horarios, orígenes y destinos compatibles para compartir una ruta en una furgoneta, reduciendo el costo del trayecto y aprovechando mejor cada recorrido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿ExpressGO trabaja únicamente con furgonetas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Los servicios de movilización de ExpressGO se realizan mediante furgonetas adecuadas para pasajeros, rutas compartidas, mascotas, equipaje, paquetes y viajes grupales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿PetTrip permite que el propietario viaje con su mascota?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. PetTrip es un servicio exclusivo para el traslado programado de mascotas (sin propietarios ni pasajeros) hacia guarderías, hoteles para mascotas y destinos con horarios fijos."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Navbar (Header) -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="nav-logo" aria-label="ExpressGO Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        <span>ExpressGO</span><span class="logo-dot"></span>
+      </a>
+      
+      <!-- Desktop Navigation Menu - Simplified -->
+      <nav aria-label="Menú principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="comunidad.html#conductores" class="nav-link">Conductores</a></li>
+          <li><a href="comunidad.html#comunidad" class="nav-link">Comunidad</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Header CTAs -->
+      <div class="nav-actions">
+        <a href="index.html#rutas" class="btn btn-secondary" id="nav-search-btn">Buscar Ruta</a>
+        <a href="index.html#registro" class="btn btn-primary" id="nav-register-btn">Registrarse</a>
+      </div>
+      
+      <!-- Mobile Menu Trigger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-controls="mobile-drawer" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Off-canvas Navigation Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer" aria-label="Menú móvil">
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+      <li><a href="comunidad.html#conductores" class="nav-link">Conductores</a></li>
+      <li><a href="comunidad.html#comunidad" class="nav-link">Comunidad</a></li>
+      <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index.html#rutas" class="btn btn-secondary">Buscar Ruta</a>
+      <a href="index.html#registro" class="btn btn-primary">Registrarse</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- 1. Hero Section -->
+    <section class="hero bg-dark-gradient bg-dark-grid" id="hero">
+      <div class="glow-green" style="top: 10%; right: 20%;"></div>
+      <div class="glow-green" style="bottom: 10%; left: 5%;"></div>
+      <div class="container hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content reveal">
+          <span class="eyebrow">APP DE MOVILIDAD INTELIGENTE</span>
+          <h1 class="text-gradient-green">Taxi Ruta Inteligente y Transporte Compartido para una nueva forma de viajar.</h1>
+          <p class="description">Reserva viajes compartidos con una plataforma de movilidad inteligente que conecta pasajeros, furgonetas y empresas mediante rutas optimizadas. Ahorra tiempo, reduce costos y viaja de forma segura.</p>
+          <div class="hero-buttons">
+            <a href="#rutas" class="btn btn-primary"><i data-lucide="search"></i>Buscar Ruta</a>
+            <a href="#registro" class="btn btn-secondary"><i data-lucide="user-plus"></i>Registrarse</a>
+          </div>
+          <div class="quick-benefits">
+            <div class="benefit-pill">
+              <i data-lucide="route"></i>
+              <span>Rutas optimizadas</span>
+            </div>
+            <div class="benefit-pill">
+              <i data-lucide="shield-check"></i>
+              <span>Conductores verificados</span>
+            </div>
+            <div class="benefit-pill">
+              <i data-lucide="badge-dollar-sign"></i>
+              <span>Ahorro compartido</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Right Column: Interactive Search Form & Visual Mockup -->
+        <div class="hero-visual reveal" style="transition-delay: 200ms;">
+          <div class="search-mockup-card">
+            <h3>Encuentra tu próxima ruta</h3>
+            <form id="hero-search-form">
+              <div class="form-grid-2">
+                <div class="input-group">
+                  <label for="hero-origin">Origen</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="map-pin"></i>
+                    <input type="text" id="hero-origin" class="input-field" placeholder="¿Desde dónde viajas?" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="hero-destination">Destino</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="navigation"></i>
+                    <input type="text" id="hero-destination" class="input-field" placeholder="¿A dónde quieres llegar?" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="hero-date">Fecha</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="calendar-days"></i>
+                    <input type="date" id="hero-date" class="input-field" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="hero-passengers">Pasajeros</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="users"></i>
+                    <select id="hero-passengers" class="input-field">
+                      <option value="1">1 pasajero</option>
+                      <option value="2">2 pasajeros</option>
+                      <option value="3">3 pasajeros</option>
+                      <option value="4">4+ pasajeros</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" id="hero-search-btn" style="width: 100%;">Buscar Ruta</button>
+            </form>
+          </div>
+          
+          <!-- Secondary Visual Mockup (Route Map) -->
+          <div class="visuals-container">
+            <div class="mini-map-card" aria-label="Mapa de ruta inteligente ExpressGO">
+              <svg class="map-svg-placeholder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+                <defs>
+                  <linearGradient id="route-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#8CBF26" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#A8F23C" stop-opacity="1"/>
+                  </linearGradient>
+                </defs>
+                <path d="M 0,40 L 400,40 M 0,80 L 400,80 M 0,120 L 400,120 M 0,160 L 400,160 M 50,0 L 50,200 M 100,0 L 100,200 M 150,0 L 150,200 M 200,0 L 200,200 M 250,0 L 250,200 M 300,0 L 300,200 M 350,0 L 350,200" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+                <path d="M 60,140 Q 150,60 220,130 T 340,70" fill="none" stroke="url(#route-grad)" stroke-width="4" stroke-dasharray="200" stroke-dashoffset="0">
+                  <animate attributeName="stroke-dashoffset" values="200;0" dur="4s" repeatCount="indefinite" />
+                </path>
+                <circle cx="60" cy="140" r="6" fill="#0E1A2B" stroke="#8CBF26" stroke-width="2" />
+                <circle cx="170" cy="95" r="5" fill="#0E1A2B" stroke="#8CBF26" stroke-width="2" />
+                <circle cx="340" cy="70" r="7" fill="#A8F23C" stroke="#0E1A2B" stroke-width="2" />
+                <g>
+                  <circle cx="170" cy="95" r="14" fill="#A8F23C" fill-opacity="0.2">
+                    <animate attributeName="r" values="8;18;8" dur="2s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="170" cy="95" r="6" fill="#A8F23C" />
+                </g>
+              </svg>
+              <div class="map-card-content">
+                <span class="badge-route-duration"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> 45 min de viaje estimado</span>
+                <span class="badge-savings">Ahorro: 25%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Qué es ExpressGO Section -->
+    <section class="about-section section-padding" id="nosotros">
+      <div class="container about-grid">
+        <!-- Left text content -->
+        <div class="about-content reveal">
+          <span class="eyebrow">QUÉ ES EXPRESSGO</span>
+          <h2>No somos una empresa de transporte. Somos una APP de movilidad inteligente.</h2>
+          <p class="supporting-text">Diseñamos una experiencia digital que integra pasajeros, conductores, empresas, rutas y furgonetas compartidas dentro de una sola plataforma.</p>
+          <p style="color: var(--color-gray); margin-top: 20px;">Nuestro sistema organiza los recorridos para conectar personas con destinos compatibles, aprovechar mejor cada furgoneta y crear una movilidad más económica y eficiente. Una nueva forma de viajar, compartir y ahorrar.</p>
+        </div>
+        
+        <!-- Right value cards grid -->
+        <div class="about-cards-grid reveal" style="transition-delay: 200ms;">
+          <div class="value-card">
+            <div class="value-card-icon"><i data-lucide="shield-check"></i></div>
+            <h3>Seguridad primero</h3>
+            <p>Conductores y furgonetas verificados para brindar confianza antes, durante y después de tu viaje.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-icon"><i data-lucide="route"></i></div>
+            <h3>Rutas optimizadas</h3>
+            <p>Trayectos directos y organizados para reducir tiempos de espera y kilómetros innecesarios.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-icon"><i data-lucide="smartphone"></i></div>
+            <h3>Experiencia digital</h3>
+            <p>Reserva, seguimiento y comunicación desde una APP moderna, rápida y sencilla.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-icon"><i data-lucide="piggy-bank"></i></div>
+            <h3>Ahorro compartido</h3>
+            <p>Los pasajeros reducen el costo de sus viajes y los conductores aprovechan mejor el combustible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Beneficios Section -->
+    <section class="benefits-section section-padding bg-dark-gradient" id="beneficios">
+      <div class="glow-green" style="top: 20%; left: 10%;"></div>
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">COMPARTIR NOS BENEFICIA A TODOS</span>
+          <h2 class="section-title">Menos gasto para el pasajero. Más eficiencia para el conductor.</h2>
+          <p class="section-description centered">Cuando varias personas comparten trayectos compatibles, el costo y los recursos del recorrido se aprovechan mejor.</p>
+        </div>
+        
+        <div class="benefits-grid">
+          <!-- Passenger Card -->
+          <div class="dual-card reveal">
+            <div class="dual-card-header">
+              <span class="audience-tag">Pasajeros</span>
+              <div class="dual-card-icon"><i data-lucide="users"></i></div>
+              <h3>Viaja pagando menos</h3>
+              <p class="dual-card-desc">Comparte el recorrido con pasajeros que se dirigen hacia rutas similares y reduce el costo individual del viaje.</p>
+            </div>
+            <ul class="benefits-checklist">
+              <li class="checklist-item"><i data-lucide="check"></i>Menor costo por pasajero</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Menos tiempos de espera</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Rutas organizadas</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Mayor previsibilidad</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Reserva digital</li>
+            </ul>
+            <div class="dual-card-visual" aria-label="Visualización de pasajeros compartiendo furgoneta">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="100%" height="100%">
+                <rect width="300" height="120" fill="#182127" rx="10"/>
+                <circle cx="60" cy="60" r="24" fill="#8CBF26" fill-opacity="0.1"/>
+                <circle cx="60" cy="60" r="16" fill="#8CBF26"/>
+                <path d="M 60,60 L 120,60 L 180,60" stroke="#8CBF26" stroke-width="2" stroke-dasharray="4 4" />
+                <circle cx="120" cy="60" r="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+                <circle cx="180" cy="60" r="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+                <text x="120" y="66" font-family="sans-serif" font-size="16" fill="#fff" text-anchor="middle">👤</text>
+                <text x="180" y="66" font-family="sans-serif" font-size="16" fill="#fff" text-anchor="middle">👤</text>
+                <text x="60" y="66" font-family="sans-serif" font-size="16" fill="#0E1A2B" text-anchor="middle">🚐</text>
+              </svg>
+            </div>
+          </div>
+          
+          <!-- Driver Card -->
+          <div class="dual-card reveal" style="transition-delay: 200ms;">
+            <div class="dual-card-header">
+              <span class="audience-tag">Conductores</span>
+              <div class="dual-card-icon"><i data-lucide="fuel"></i></div>
+              <h3>Aprovecha cada recorrido</h3>
+              <p class="dual-card-desc">Recibe rutas organizadas para transportar más pasajeros compatibles, evitar recorridos vacíos y reducir el consumo innecesario de combustible.</p>
+            </div>
+            <ul class="benefits-checklist">
+              <li class="checklist-item"><i data-lucide="check"></i>Menos kilómetros sin pasajeros</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Mayor ocupación de la furgoneta</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Mejor planificación de rutas</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Ahorro de combustible</li>
+              <li class="checklist-item"><i data-lucide="check"></i>Más oportunidades de ingresos</li>
+            </ul>
+            <div class="dual-card-visual" aria-label="Visualización de conductor optimizando kilómetros">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="100%" height="100%">
+                <rect width="300" height="120" fill="#182127" rx="10"/>
+                <path d="M 30,80 C 100,20 200,100 270,40" fill="none" stroke="#A8F23C" stroke-width="3"/>
+                <circle cx="270" cy="40" r="16" fill="#A8F23C" fill-opacity="0.2"/>
+                <circle cx="270" cy="40" r="8" fill="#A8F23C"/>
+                <circle cx="150" cy="60" r="28" fill="#12191F" stroke="rgba(255,255,255,0.05)" stroke-width="4"/>
+                <path d="M 128,68 A 25,25 0 0,1 172,68" fill="none" stroke="#6B7280" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 128,68 A 25,25 0 0,1 150,35" fill="none" stroke="#8CBF26" stroke-width="4" stroke-linecap="round"/>
+                <line x1="150" y1="60" x2="162" y2="45" stroke="#A8F23C" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Cómo funciona Section -->
+    <section class="how-works-section section-padding bg-dark-grid" id="como-funciona">
+      <div class="glow-green" style="bottom: 10%; right: 5%;"></div>
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">CÓMO FUNCIONA</span>
+          <h2 class="section-title">Encuentra tu ruta y comienza a viajar.</h2>
+          <p class="section-description centered">Un proceso sencillo desde la búsqueda hasta la llegada.</p>
+        </div>
+        
+        <div class="steps-container reveal">
+          <div class="steps-connector-line"></div>
+          
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-number">01</span>
+              <div class="step-icon-wrapper"><i data-lucide="map-pin-plus"></i></div>
+            </div>
+            <div class="step-content">
+              <h3>Indica tu origen y destino</h3>
+              <p>Registra el lugar de salida, destino, fecha y número de pasajeros.</p>
+            </div>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-number">02</span>
+              <div class="step-icon-wrapper"><i data-lucide="search"></i></div>
+            </div>
+            <div class="step-content">
+              <h3>Encuentra ruta compatible</h3>
+              <p>Buscamos furgonetas disponibles con horarios compatibles con tu solicitud.</p>
+            </div>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-number">03</span>
+              <div class="step-icon-wrapper"><i data-lucide="route"></i></div>
+            </div>
+            <div class="step-content">
+              <h3>Optimizamos el recorrido</h3>
+              <p>ExpressGO organiza las paradas para evitar desvíos y esperas innecesarias.</p>
+            </div>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-number">04</span>
+              <div class="step-icon-wrapper"><i data-lucide="badge-check"></i></div>
+            </div>
+            <div class="step-content">
+              <h3>Confirma tu viaje</h3>
+              <p>Revisa la información del conductor, la furgoneta y los detalles del trayecto.</p>
+            </div>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-number">05</span>
+              <div class="step-icon-wrapper"><i data-lucide="navigation"></i></div>
+            </div>
+            <div class="step-content">
+              <h3>Viaja y comparte</h3>
+              <p>Realiza tu viaje con otros pasajeros de forma segura y eficiente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Taxi Ruta Inteligente Section -->
+    <section class="section-padding" id="taxi-ruta">
+      <div class="container taxi-ruta-grid">
+        <div class="reveal">
+          <span class="eyebrow">SERVICIO PRINCIPAL</span>
+          <h2>Taxi Ruta Inteligente</h2>
+          <p class="text-gradient-green" style="font-size: 22px; font-weight: 600; margin-bottom: 16px;">Compartimos destinos. Optimizamos recorridos.</p>
+          <p>Taxi Ruta Inteligente organiza pasajeros con horarios, orígenes y destinos compatibles para compartir una ruta en una furgoneta, reduciendo el costo del trayecto y aprovechando mejor cada recorrido.</p>
+          
+          <div class="taxi-ruta-benefits">
+            <div class="tr-benefit-card">
+              <h4><i data-lucide="clock-3"></i> Menos espera</h4>
+              <p>Rutas programadas y horarios visibles desde la APP.</p>
+            </div>
+            <div class="tr-benefit-card">
+              <h4><i data-lucide="wallet-cards"></i> Costos más bajos</h4>
+              <p>El costo del trayecto se distribuye entre pasajeros compatibles.</p>
+            </div>
+            <div class="tr-benefit-card">
+              <h4><i data-lucide="fuel"></i> Ahorro de combustible</h4>
+              <p>Las furgonetas evitan recorridos vacíos y desvíos innecesarios.</p>
+            </div>
+            <div class="tr-benefit-card">
+              <h4><i data-lucide="users-round"></i> Mejor ocupación</h4>
+              <p>Cada furgoneta transporta personas con trayectos similares.</p>
+            </div>
+          </div>
+          
+          <a href="#rutas" class="btn btn-primary">Buscar una Ruta</a>
+        </div>
+        
+        <!-- Right Column: Interactive Map/Van Mockup -->
+        <div class="map-visual-wrapper reveal" style="transition-delay: 200ms;">
+          <div class="map-visual-header">
+            <span class="map-tag"><i data-lucide="map"></i> Mapa de Ruta en Furgoneta</span>
+            <span style="font-size: 13px; color: var(--color-text-light);">Estado: Activo</span>
+          </div>
+          <div class="map-mockup-frame">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="100%" height="100%">
+              <defs>
+                <linearGradient id="route-path-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8CBF26"/>
+                  <stop offset="100%" stop-color="#A8F23C"/>
+                </linearGradient>
+              </defs>
+              <path d="M 0,50 L 500,50 M 0,100 L 500,100 M 0,150 L 500,150 M 0,200 L 500,200 M 0,250 L 500,250 M 50,0 L 50,280 M 100,0 L 100,280 M 150,0 L 150,280 M 200,0 L 200,280 M 250,0 L 250,280 M 300,0 L 300,280 M 350,0 L 350,280 M 400,0 L 400,280 M 450,0 L 450,280" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+              <path d="M 80,220 C 130,220 120,80 200,80 C 280,80 260,200 350,200 C 400,200 420,110 440,110" fill="none" stroke="url(#route-path-grad)" stroke-width="5" stroke-linecap="round"/>
+              
+              <circle cx="80" cy="220" r="10" fill="#0E1A2B" stroke="#8CBF26" stroke-width="3"/>
+              <text x="80" y="224" font-family="Poppins" font-size="11" font-weight="700" fill="#8CBF26" text-anchor="middle">A</text>
+              <circle cx="200" cy="80" r="10" fill="#0E1A2B" stroke="#8CBF26" stroke-width="3"/>
+              <text x="200" y="84" font-family="Poppins" font-size="11" font-weight="700" fill="#8CBF26" text-anchor="middle">B</text>
+              <circle cx="350" cy="200" r="10" fill="#0E1A2B" stroke="#8CBF26" stroke-width="3"/>
+              <text x="350" y="204" font-family="Poppins" font-size="11" font-weight="700" fill="#8CBF26" text-anchor="middle">C</text>
+              
+              <g transform="translate(440, 110)">
+                <path d="M 0,0 C -5,-15 -10,-15 -10,-22 A 10,10 0 1,1 10,-22 C 10,-15 5,-15 0,0 Z" fill="#A8F23C" stroke="#0E1A2B" stroke-width="2" />
+                <circle cx="0" cy="-22" r="4" fill="#0E1A2B" />
+              </g>
+              
+              <!-- Furgoneta Icon -->
+              <g transform="translate(260, 130)">
+                <rect x="-16" y="-12" width="32" height="24" rx="6" fill="#8CBF26" stroke="#0B0F14" stroke-width="2" />
+                <rect x="6" y="-8" width="8" height="16" rx="2" fill="#0E1A2B" />
+                <circle cx="-8" cy="14" r="5" fill="#0B0F14" />
+                <circle cx="8" cy="14" r="5" fill="#0B0F14" />
+              </g>
+            </svg>
+            
+            <div class="map-overlay-widgets">
+              <div class="map-widget">
+                <div class="map-widget-label">Capacidad Furgoneta</div>
+                <div class="map-widget-value">5 / 8 Asientos</div>
+              </div>
+              <div class="map-widget">
+                <div class="map-widget-label">Ahorro Promedio</div>
+                <div class="map-widget-value">Hasta 25%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Rutas y Destinos Section -->
+    <section class="routes-section section-padding bg-dark-gradient" id="rutas">
+      <div class="glow-green" style="top: 10%; right: 10%;"></div>
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">RUTAS Y DESTINOS</span>
+          <h2 class="section-title">Encuentra trayectos desde tu ciudad.</h2>
+          <p class="section-description centered">Consulta rutas organizadas por ciudad de origen y selecciona el trayecto que mejor se adapte a tu recorrido.</p>
+        </div>
+        
+        <!-- Search & Filter Panel -->
+        <div class="routes-search-panel reveal" id="buscador-rutas">
+          <div class="form-layout-grid">
+            <div class="input-group">
+              <label for="filter-origin-select">Ciudad de Origen</label>
+              <div class="input-field-wrapper">
+                <i data-lucide="map-pin"></i>
+                <select id="filter-origin-select" class="input-field">
+                  <option value="all">Todas las ciudades</option>
+                  <option value="guayaquil">Guayaquil</option>
+                  <option value="quito">Quito</option>
+                  <option value="cuenca">Cuenca</option>
+                  <option value="manta">Manta</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="input-group">
+              <label for="search-destiny">Lugar de Destino</label>
+              <div class="input-field-wrapper">
+                <i data-lucide="search"></i>
+                <input type="text" id="search-destiny" class="input-field" placeholder="Buscar destino (ej. Centro, Urdesa, Cumbayá)">
+              </div>
+            </div>
+          </div>
+          
+          <div class="quick-filters-row">
+            <span>Filtros rápidos:</span>
+            <button class="quick-filter-btn active" data-filter="all">Todos</button>
+            <button class="quick-filter-btn" data-filter="today">Hoy</button>
+            <button class="quick-filter-btn" data-filter="tomorrow">Mañana</button>
+            <button class="quick-filter-btn" data-filter="frequent">Rutas frecuentes</button>
+          </div>
+        </div>
+        
+        <!-- Origin Group: Guayaquil -->
+        <div class="origin-group reveal" data-origin="guayaquil">
+          <div class="origin-group-header">
+            <div class="origin-group-title">
+              <h3>Guayaquil</h3>
+              <span class="origin-group-count">4 trayectos demo</span>
+            </div>
+            <span class="origin-group-next-departure">Próxima salida: 07:00 AM</span>
+          </div>
+          
+          <div class="routes-grid">
+            <div class="route-card" data-destination="centro de guayaquil" data-frequent="true">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Alborada</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Centro de Guayaquil</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">07:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">5 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Alborada" data-destination="Centro de Guayaquil">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="centro de guayaquil" data-frequent="false">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Mucho Lote</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Centro de Guayaquil</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">07:30 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">4 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Mucho Lote" data-destination="Centro de Guayaquil">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="urdesa" data-frequent="true">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Samanes</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Urdesa</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">08:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">6 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Samanes" data-destination="Urdesa">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="mall del sol" data-frequent="false">
+              <div class="route-card-header">
+                <span class="route-badge few-seats">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Terminal Terrestre</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Mall del Sol</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">08:30 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">3 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Terminal Terrestre" data-destination="Mall del Sol">Ver disponibilidad</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Origin Group: Quito -->
+        <div class="origin-group reveal" data-origin="quito">
+          <div class="origin-group-header">
+            <div class="origin-group-title">
+              <h3>Quito</h3>
+              <span class="origin-group-count">4 trayectos demo</span>
+            </div>
+            <span class="origin-group-next-departure">Próxima salida: 07:00 AM</span>
+          </div>
+          
+          <div class="routes-grid">
+            <div class="route-card" data-destination="teleférico de quito" data-frequent="false">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Plaza Grande</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Teleférico de Quito</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">09:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">5 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Plaza Grande" data-destination="Teleférico de Quito">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="centro histórico" data-frequent="true">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Carcelén</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Centro Histórico</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">07:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">6 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Carcelén" data-destination="Centro Histórico">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="cumbayá" data-frequent="true">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> La Carolina</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Cumbayá</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">08:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">4 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="La Carolina" data-destination="Cumbayá">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="la mariscal" data-frequent="false">
+              <div class="route-card-header">
+                <span class="route-badge few-seats">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Quitumbe</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> La Mariscal</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">07:30 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">5 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Quitumbe" data-destination="La Mariscal">Ver disponibilidad</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Origin Group: Cuenca -->
+        <div class="origin-group reveal" data-origin="cuenca">
+          <div class="origin-group-header">
+            <div class="origin-group-title">
+              <h3>Cuenca</h3>
+              <span class="origin-group-count">2 trayectos demo</span>
+            </div>
+            <span class="origin-group-next-departure">Próxima salida: 08:00 AM</span>
+          </div>
+          
+          <div class="routes-grid">
+            <div class="route-card" data-destination="centro histórico" data-frequent="true">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Terminal Terrestre</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Centro Histórico</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">08:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">5 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Terminal Terrestre" data-destination="Centro Histórico">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="parque calderón" data-frequent="false">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> El Arenal</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Parque Calderón</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">08:30 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">4 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="El Arenal" data-destination="Parque Calderón">Ver disponibilidad</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Origin Group: Manta -->
+        <div class="origin-group reveal" data-origin="manta">
+          <div class="origin-group-header">
+            <div class="origin-group-title">
+              <h3>Manta</h3>
+              <span class="origin-group-count">2 trayectos demo</span>
+            </div>
+            <span class="origin-group-next-departure">Próxima salida: 08:00 AM</span>
+          </div>
+          
+          <div class="routes-grid">
+            <div class="route-card" data-destination="playa murciélago" data-frequent="true">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Terminal Terrestre</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Playa Murciélago</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">09:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">6 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Terminal Terrestre" data-destination="Playa Murciélago">Ver disponibilidad</button>
+              </div>
+            </div>
+
+            <div class="route-card" data-destination="centro de manta" data-frequent="false">
+              <div class="route-card-header">
+                <span class="route-badge available">Ruta demostrativa</span>
+                <span class="route-vehicle-type"><i data-lucide="bus"></i> Furgoneta</span>
+              </div>
+              <div class="route-locations">
+                <div class="route-loc-item"><i data-lucide="map-pin"></i> Los Esteros</div>
+                <div class="route-loc-item destination"><i data-lucide="navigation"></i> Centro de Manta</div>
+              </div>
+              <div class="route-details-list">
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Salida</span>
+                  <span class="route-detail-val">08:00 AM</span>
+                </div>
+                <div class="route-detail-item">
+                  <span class="route-detail-label">Asientos</span>
+                  <span class="route-detail-val">4 libres</span>
+                </div>
+              </div>
+              <div class="route-card-footer">
+                <div class="route-price-box">
+                  <span class="route-price-label">Costo estimado</span>
+                  <span class="route-price-val">Por confirmar</span>
+                </div>
+                <button class="btn btn-primary btn-select-route" data-origin="Los Esteros" data-destination="Centro de Manta">Ver disponibilidad</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <p class="stat-legal-note text-center" style="margin-top: 40px; color: var(--color-gray);">* Advertencia: Las rutas, horarios, asientos y precios son ejemplos visuales. No deben publicarse como rutas reales hasta que la operación comercial los valide.</p>
+      </div>
+    </section>
+
+    <!-- 7. Servicios Summary Section -->
+    <section class="section-padding" id="servicios">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">SERVICIOS EXPRESSGO</span>
+          <h2 class="section-title">Soluciones diseñadas para cada forma de moverte.</h2>
+          <p class="section-description centered">Conoce los servicios especializados que forman parte del ecosistema ExpressGO.</p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card reveal">
+            <div>
+              <div class="service-icon"><i data-lucide="package-check"></i></div>
+              <h3>Express Cargo</h3>
+              <p class="service-description">Envíos programados de documentos, paquetes y productos para empresas, comercios y distribuidores.</p>
+              <span class="service-benefit">Entregas organizadas, rápidas y seguras.</span>
+            </div>
+            <a href="servicios.html#express-cargo" class="btn btn-primary" aria-label="Conocer más sobre Express Cargo">Conocer más</a>
+          </div>
+          
+          <!-- Service 2 -->
+          <div class="service-card reveal" style="transition-delay: 100ms;">
+            <div>
+              <div class="service-icon"><i data-lucide="venus"></i></div>
+              <h3>Express Mujer</h3>
+              <p class="service-description">Servicio exclusivo de movilidad en el que las conductoras y las pasajeras son únicamente mujeres.</p>
+              <span class="service-benefit">Mayor seguridad, confianza y comodidad.</span>
+            </div>
+            <a href="servicios.html#express-mujer" class="btn btn-primary" aria-label="Conocer más sobre Express Mujer">Conocer más</a>
+          </div>
+          
+          <!-- Service 3 -->
+          <div class="service-card reveal" style="transition-delay: 200ms;">
+            <div>
+              <div class="service-icon"><i data-lucide="paw-print"></i></div>
+              <h3>PetTrip</h3>
+              <p class="service-description">Transporte programado exclusivamente para mascotas (sin propietarios ni pasajeros) hacia guarderías, hoteles y destinos con horarios fijos.</p>
+              <span class="service-benefit">Traslado exclusivo de mascotas, sin pasajeros.</span>
+            </div>
+            <a href="servicios.html#pettrip" class="btn btn-primary" aria-label="Conocer más sobre Express PetTrip">Conocer más</a>
+          </div>
+          
+          <!-- Service 4 -->
+          <div class="service-card reveal" style="transition-delay: 300ms;">
+            <div>
+              <div class="service-icon"><i data-lucide="boxes"></i></div>
+              <h3>MovePack</h3>
+              <p class="service-description">Transporte de equipaje, compras, cajas y artículos voluminosos mediante furgonetas.</p>
+              <span class="service-benefit">Más capacidad para transportar tus objetos.</span>
+            </div>
+            <a href="servicios.html#movepack" class="btn btn-primary" aria-label="Conocer más sobre MovePack">Conocer más</a>
+          </div>
+          
+          <!-- Service 5 -->
+          <div class="service-card reveal" style="transition-delay: 400ms;">
+            <div>
+              <div class="service-icon"><i data-lucide="palmtree"></i></div>
+              <h3>Escapia</h3>
+              <p class="service-description">Viajes recreativos, turísticos y escapadas grupales de fin de semana mediante furgonetas.</p>
+              <span class="service-benefit">Viajes grupales con mayor comodidad.</span>
+            </div>
+            <a href="servicios.html#escapia" class="btn btn-primary" aria-label="Conocer más sobre Escapia">Conocer más</a>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;" class="reveal">
+          <a href="servicios.html" class="btn btn-primary">Ver todos los servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Tu Experiencia ExpressGO Section -->
+    <section class="experience-section section-padding bg-dark-gradient" id="experiencia-expressgo">
+      <div class="glow-green" style="top: 20%; left: 10%;"></div>
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">TU EXPERIENCIA EXPRESSGO</span>
+          <h2 class="section-title">Tu experiencia mejora con cada viaje.</h2>
+          <p class="section-description centered">Cada recorrido te permite descubrir nuevas formas de viajar, acceder más rápido a tus destinos frecuentes y disfrutar de beneficios dentro de la comunidad ExpressGO.</p>
+        </div>
+        
+        <div class="experience-grid">
+          <!-- Card 1: Pasajeros -->
+          <div class="experience-card reveal">
+            <div class="experience-card-header">
+              <span class="experience-audience">Para Pasajeros</span>
+              <div class="experience-card-icon"><i data-lucide="history"></i></div>
+              <h3>Tu próximo viaje está más cerca.</h3>
+              <p>Consulta tu historial, guarda tus destinos frecuentes y vuelve a reservar tus recorridos habituales en menos pasos.</p>
+            </div>
+            <ul class="experience-features">
+              <li class="experience-feature-item"><i data-lucide="check"></i> Historial de viajes</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> Destinos frecuentes</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> Repetir este viaje</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-secondary">Explorar mi experiencia</a>
+          </div>
+          
+          <!-- Card 2: Conductores -->
+          <div class="experience-card reveal" style="transition-delay: 100ms;">
+            <div class="experience-card-header">
+              <span class="experience-audience">Para Conductores</span>
+              <div class="experience-card-icon"><i data-lucide="award"></i></div>
+              <h3>Tu esfuerzo te lleva más lejos.</h3>
+              <p>Cada viaje es una oportunidad para crecer dentro de ExpressGO, obtener reconocimiento y acceder a nuevos beneficios.</p>
+            </div>
+            <ul class="experience-features">
+              <li class="experience-feature-item"><i data-lucide="check"></i> Sistema de puntos</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> Niveles de conductor</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> Conductor Oro</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> Reconocimientos</li>
+            </ul>
+            <a href="comunidad.html#conductores" class="btn btn-primary">Conoce los beneficios</a>
+          </div>
+          
+          <!-- Card 3: Comunidad -->
+          <div class="experience-card reveal" style="transition-delay: 200ms;">
+            <div class="experience-card-header">
+              <span class="experience-audience">Comunidad ExpressGO</span>
+              <div class="experience-card-icon"><i data-lucide="users"></i></div>
+              <h3>Muévete y disfruta más beneficios.</h3>
+              <p>Forma parte de una comunidad donde tu actividad puede convertirse en nuevas ventajas.</p>
+            </div>
+            <ul class="experience-features">
+              <li class="experience-feature-item"><i data-lucide="check"></i> GoPoints™</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> ExpressPass™</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> Promociones</li>
+              <li class="experience-feature-item"><i data-lucide="check"></i> Beneficios exclusivos</li>
+            </ul>
+            <a href="comunidad.html#comunidad" class="btn btn-secondary">Descubrir beneficios</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Statistics Section (Restored Original Layout) -->
+    <section class="statistics-section section-padding bg-dark-gradient bg-dark-grid" id="estadisticas">
+      <div class="glow-green" style="top: 10%; right: 10%;"></div>
+      <div class="container reveal">
+        <div class="stats-grid">
+          <!-- Left Column: Featured Stat Card -->
+          <div class="featured-stat-box">
+            <div class="stat-huge-number">Ahorro</div>
+            <h3 class="stat-huge-label">Ahorro potencial</h3>
+            <p class="stat-huge-desc">En tiempo, combustible y costos de movilidad general mediante rutas inteligentes compartidas y optimizadas.</p>
+            <div class="stat-legal-note">* Beneficio sujeto a validación con información real.</div>
+          </div>
+          
+          <!-- Right Column: 2x2 Grid of Stat Cards -->
+          <div class="stats-cards-grid">
+            <!-- Card 1 -->
+            <div class="stat-card">
+              <div class="stat-card-icon"><i data-lucide="clock"></i></div>
+              <div class="stat-card-content">
+                <div class="stat-card-number">24/7</div>
+                <div class="stat-card-label">Disponibilidad de consultas</div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="stat-card">
+              <div class="stat-card-icon"><i data-lucide="badge-check"></i></div>
+              <div class="stat-card-content">
+                <div class="stat-card-number">100%</div>
+                <div class="stat-card-label">Enfoque en seguridad</div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="stat-card">
+              <div class="stat-card-icon"><i data-lucide="layers"></i></div>
+              <div class="stat-card-content">
+                <div class="stat-card-number">5</div>
+                <div class="stat-card-label">Servicios integrados en la APP</div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="stat-card">
+              <div class="stat-card-icon"><i data-lucide="route"></i></div>
+              <div class="stat-card-content">
+                <div class="stat-card-number">Más</div>
+                <div class="stat-card-label">Rutas organizadas en el país</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FAQ Section (Reduced to 5 items) -->
+    <section class="section-padding bg-dark-gradient" id="faq">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">PREGUNTAS FRECUENTES</span>
+          <h2 class="section-title">Todo lo que necesitas saber antes de viajar.</h2>
+          <p class="section-description centered" style="margin-bottom: 50px;">Resolvemos tus dudas principales sobre el funcionamiento del sistema ExpressGO.</p>
+        </div>
+        
+        <div class="faq-grid reveal">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <h3>¿Qué es Taxi Ruta Inteligente?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Es el servicio principal de ExpressGO. Organiza pasajeros con horarios, orígenes y destinos compatibles para compartir una ruta en una furgoneta, reduciendo el costo del trayecto y aprovechando mejor cada recorrido.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <h3>¿ExpressGO trabaja únicamente con furgonetas?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Sí. Los servicios de movilización de ExpressGO se realizan mediante furgonetas adecuadas para pasajeros, rutas compartidas, mascotas, equipaje, paquetes y viajes grupales, de acuerdo con las características de cada servicio.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <h3>¿PetTrip permite que el propietario viaje con su mascota?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>No. PetTrip es un servicio exclusivo para el traslado programado de mascotas (sin propietarios ni pasajeros) hacia guarderías, hoteles para mascotas y destinos con horarios fijos. No se transportan pasajeros humanos en este servicio.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <h3>¿Quién puede utilizar Express Mujer?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Express Mujer es un servicio exclusivo en el que tanto las conductoras como las pasajeras son mujeres, brindando mayor comodidad y confianza.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <h3>¿Cómo puedo solicitar soporte?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Utiliza el botón de ayuda ubicado en la esquina inferior derecha de la pantalla para abrir el panel de soporte y enviarnos una consulta de rutas, registro, soporte técnico o información general.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Contact Form & Registration Section -->
+    <section class="section-padding" id="registro">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">COMIENZA CON EXPRESSGO</span>
+          <h2 class="section-title">Encuentra una ruta o forma parte de nuestra comunidad.</h2>
+          <p class="section-description centered">Completa el formulario según tu necesidad y nos pondremos en contacto.</p>
+        </div>
+        
+        <div class="form-section-wrapper reveal">
+          <div class="form-tabs">
+            <button class="form-tab-btn active" data-tab="buscar-ruta">Buscar Ruta</button>
+            <button class="form-tab-btn" data-tab="registrarse">Registrarse</button>
+          </div>
+          
+          <!-- Panel 1: Buscar Ruta -->
+          <div class="form-panel active" id="buscar-ruta-panel">
+            <form class="contact-form" id="form-search-route">
+              <div class="form-layout-grid">
+                <div class="input-group">
+                  <label for="reg-origin">Origen</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="map-pin"></i>
+                    <input type="text" id="reg-origin" class="input-field" placeholder="Ciudad de partida" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-destination">Destino</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="navigation"></i>
+                    <input type="text" id="reg-destination" class="input-field" placeholder="Ciudad de llegada" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-date">Fecha</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="calendar"></i>
+                    <input type="date" id="reg-date" class="input-field" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-time">Hora aproximada</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="clock"></i>
+                    <input type="time" id="reg-time" class="input-field" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-passengers">Número de pasajeros</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="users"></i>
+                    <input type="number" id="reg-passengers" class="input-field" min="1" max="10" value="1" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-name">Nombre completo</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="user"></i>
+                    <input type="text" id="reg-name" class="input-field" placeholder="Tu nombre" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-phone">Teléfono de contacto</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="phone"></i>
+                    <input type="tel" id="reg-phone" class="input-field" placeholder="Ej: 0987654321" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-email">Correo electrónico</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="mail"></i>
+                    <input type="email" id="reg-email" class="input-field" placeholder="correo@ejemplo.com" required>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">Enviar solicitud de ruta</button>
+              
+              <div class="form-success-message">
+                <div class="form-success-icon"><i data-lucide="check-circle-2"></i></div>
+                <h3>¡Solicitud recibida con éxito!</h3>
+                <p>Hemos registrado tu búsqueda de ruta. Evaluaremos las furgonetas y horarios compatibles de la plataforma y te contactaremos por correo electrónico o llamada telefónica a la brevedad.</p>
+                <button type="button" class="btn btn-secondary btn-reset-form">Nueva solicitud</button>
+              </div>
+            </form>
+          </div>
+          
+          <!-- Panel 2: Registrarse -->
+          <div class="form-panel" id="registrarse-panel">
+            <form class="contact-form" id="form-user-register">
+              <div class="form-layout-grid">
+                <div class="input-group form-input-full">
+                  <label for="reg-user-type">Tipo de usuario</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="user-cog"></i>
+                    <select id="reg-user-type" class="input-field" required>
+                      <option value="pasajero">Pasajero</option>
+                      <option value="conductor">Conductor</option>
+                      <option value="empresa">Empresa</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-firstname">Nombres</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="user"></i>
+                    <input type="text" id="reg-firstname" class="input-field" placeholder="Nombres" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-lastname">Apellidos</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="user"></i>
+                    <input type="text" id="reg-lastname" class="input-field" placeholder="Apellidos" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-reg-email">Correo electrónico</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="mail"></i>
+                    <input type="email" id="reg-reg-email" class="input-field" placeholder="correo@ejemplo.com" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-reg-phone">Teléfono de contacto</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="phone"></i>
+                    <input type="tel" id="reg-reg-phone" class="input-field" placeholder="Ej: 0987654321" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-city">Ciudad de residencia</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="building"></i>
+                    <input type="text" id="reg-city" class="input-field" placeholder="Ej: Guayaquil, Quito" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-pass">Contraseña</label>
+                  <div class="input-field-wrapper">
+                    <i data-lucide="lock"></i>
+                    <input type="password" id="reg-pass" class="input-field" placeholder="Mínimo 8 caracteres" required minlength="8">
+                  </div>
+                </div>
+                
+                <div class="form-checkbox-group">
+                  <input type="checkbox" id="reg-terms" required>
+                  <label for="reg-terms">Acepto los términos y condiciones de uso y la política de privacidad de datos personales de ExpressGO.</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">Crear mi cuenta</button>
+              
+              <div class="form-success-message">
+                <div class="form-success-icon"><i data-lucide="check-circle-2"></i></div>
+                <h3>¡Registro completado!</h3>
+                <p>Tu cuenta ha sido pre-creada con éxito. Te hemos enviado un correo de verificación para activar tu cuenta e iniciar sesión en la APP.</p>
+                <button type="button" class="btn btn-secondary btn-reset-form">Registrar otra cuenta</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span>ExpressGO</span><span class="logo-dot"></span>
+          </a>
+          <p style="font-size: 14px; color: var(--color-gray); line-height: 1.6;">ExpressGO es una APP de movilidad inteligente que conecta pasajeros, furgonetas y empresas mediante rutas optimizadas en Ecuador.</p>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook ExpressGO" target="_blank" rel="noopener"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+            <a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram ExpressGO" target="_blank" rel="noopener"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+            <a href="https://www.tiktok.com" class="social-icon-btn" aria-label="TikTok ExpressGO" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="https://www.linkedin.com" class="social-icon-btn" aria-label="LinkedIn ExpressGO" target="_blank" rel="noopener"><i data-lucide="linkedin" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Movilidad</span>
+          <ul class="footer-links">
+            <li><a href="index.html#nosotros">Qué es ExpressGO</a></li>
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Servicios</span>
+          <ul class="footer-links">
+            <li><a href="index.html#taxi-ruta">Taxi Ruta Inteligente</a></li>
+            <li><a href="servicios.html#express-cargo">Express Cargo</a></li>
+            <li><a href="servicios.html#express-mujer">Express Mujer</a></li>
+            <li><a href="servicios.html#pettrip">PetTrip</a></li>
+            <li><a href="servicios.html#movepack">MovePack</a></li>
+            <li><a href="servicios.html#escapia">Escapia</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <ul class="footer-links">
+            <li><a href="#footer">Política de privacidad</a></li>
+            <li><a href="#footer">Términos y condiciones</a></li>
+            <li><a href="#footer">Uso de datos personales</a></li>
+            <li><a href="#footer">Política de cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2026 ExpressGO. Todos los derechos reservados.</span>
+        <span style="font-size: 13px; color: var(--color-gray);">Quito - Guayaquil - Cuenca - Manta, Ecuador</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom CTA -->
+  <div class="sticky-bottom-cta">
+    <a href="index.html#rutas" class="btn btn-primary">Buscar Ruta</a>
+  </div>
+
+  <!-- Floating Support Widget -->
+  <div class="support-widget" id="support-widget">
+    <div class="support-tooltip">¿Necesitas ayuda?</div>
+    <button class="support-btn" id="support-floating-button" aria-label="Abrir soporte técnico" aria-haspopup="true" aria-expanded="false">
+      <i data-lucide="message-circle"></i>
+      <span class="support-btn-text">¿Necesitas ayuda?</span>
+    </button>
+    
+    <!-- Support Panel -->
+    <div class="support-panel" id="support-panel" aria-hidden="true">
+      <div class="support-panel-header">
+        <h3>Hola, ¿cómo podemos ayudarte?</h3>
+        <button class="support-panel-close" id="support-panel-close" aria-label="Cerrar soporte">&times;</button>
+      </div>
+      <div class="support-panel-body">
+        <!-- Step 1: Support Categories -->
+        <div class="support-options-list" id="support-options-list">
+          <p style="font-size: 14px; margin-bottom: 16px; color: var(--color-text-light);">Selecciona el tipo de ayuda que necesitas:</p>
+          <button class="support-option-btn" data-category="ruta">
+            <i data-lucide="route"></i>
+            <span>Dudas sobre una ruta</span>
+          </button>
+          <button class="support-option-btn" data-category="registro">
+            <i data-lucide="user"></i>
+            <span>Problemas con mi registro</span>
+          </button>
+          <button class="support-option-btn" data-category="soporte">
+            <i data-lucide="wrench"></i>
+            <span>Soporte técnico</span>
+          </button>
+          <button class="support-option-btn" data-category="general">
+            <i data-lucide="help-circle"></i>
+            <span>Consulta general</span>
+          </button>
+        </div>
+        
+        <!-- Step 2: Support Form -->
+        <div class="support-form-container" id="support-form-container">
+          <button class="support-back-btn" id="support-back-btn"><i data-lucide="chevron-left" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i> Volver</button>
+          <h4 id="support-category-title">Consulta</h4>
+          <form id="support-internal-form">
+            <input type="hidden" id="support-category-hidden" value="general">
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+              <div class="input-group">
+                <label for="sup-name" style="font-size: 11px;">Nombre</label>
+                <input type="text" id="sup-name" class="input-field" style="padding: 8px 12px;" placeholder="Tu nombre" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-email" style="font-size: 11px;">Correo electrónico</label>
+                <input type="email" id="sup-email" class="input-field" style="padding: 8px 12px;" placeholder="correo@ejemplo.com" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-phone" style="font-size: 11px;">Teléfono</label>
+                <input type="tel" id="sup-phone" class="input-field" style="padding: 8px 12px;" placeholder="Ej: 0987654321" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-user-type" style="font-size: 11px;">Tipo de usuario</label>
+                <select id="sup-user-type" class="input-field" style="padding: 8px 12px; height: 42px;">
+                  <option value="pasajero">Pasajero</option>
+                  <option value="conductor">Conductor</option>
+                  <option value="empresa">Empresa</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="sup-desc" style="font-size: 11px;">Descripción del problema</label>
+                <textarea id="sup-desc" class="input-field" style="padding: 8px 12px; min-height: 80px; resize: vertical;" placeholder="Describe tu problema o consulta..." required></textarea>
+              </div>
+              <div class="input-group">
+                <label for="sup-file" style="font-size: 11px;">Adjuntar captura (opcional)</label>
+                <input type="file" id="sup-file" class="input-field" style="padding: 6px 12px; font-size: 12px;" accept="image/*">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; min-height: 40px; padding: 10px;">Enviar solicitud</button>
+          </form>
+          
+          <!-- Success State -->
+          <div class="form-success-message" id="support-success-message">
+            <div class="form-success-icon" style="width: 48px; height: 48px; margin-bottom: 16px;"><i data-lucide="check-circle-2"></i></div>
+            <h3 style="font-size: 18px; margin-bottom: 8px;">¡Solicitud enviada!</h3>
+            <p style="font-size: 13px; line-height: 1.5; color: var(--color-text-light);">Recibimos tu solicitud. El equipo de ExpressGO se pondrá en contacto contigo.</p>
+            <button type="button" class="btn btn-secondary" id="support-reset-btn" style="min-height: 36px; padding: 8px 16px; font-size: 12px;">Nueva consulta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

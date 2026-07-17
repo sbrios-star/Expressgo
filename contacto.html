@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Contacto Comercial | ExpressGO</title>
+  <meta name="description" content="Ponte en contacto con el equipo de ExpressGO para consultas de rutas, servicios para pasajeros, registro de conductores y soluciones de movilidad para empresas.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Sticky Navbar (Header) -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="nav-logo" aria-label="ExpressGO Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        <span>ExpressGO</span><span class="logo-dot"></span>
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Menú principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="comunidad.html#conductores" class="nav-link">Conductores</a></li>
+          <li><a href="comunidad.html#comunidad" class="nav-link">Comunidad</a></li>
+          <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Header CTAs -->
+      <div class="nav-actions">
+        <a href="index.html#rutas" class="btn btn-secondary" id="nav-search-btn">Buscar Ruta</a>
+        <a href="index.html#registro" class="btn btn-primary" id="nav-register-btn">Registrarse</a>
+      </div>
+      
+      <!-- Mobile Menu Trigger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-controls="mobile-drawer" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Off-canvas Navigation Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer" aria-label="Menú móvil">
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+      <li><a href="comunidad.html#conductores" class="nav-link">Conductores</a></li>
+      <li><a href="comunidad.html#comunidad" class="nav-link">Comunidad</a></li>
+      <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index.html#rutas" class="btn btn-secondary">Buscar Ruta</a>
+      <a href="index.html#registro" class="btn btn-primary">Registrarse</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main style="padding-top: 84px;">
+    
+    <!-- Hero Section (Contacto Principal) -->
+    <section class="services-hero bg-dark-gradient bg-dark-grid" id="contacto-principal" style="min-height: 380px;">
+      <div class="glow-green" style="top: 10%; left: 10%;"></div>
+      <div class="container">
+        <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <span class="eyebrow">CONTACTO EXPRESSGO</span>
+          <h1 class="text-gradient-green" style="font-size: 52px; margin-bottom: 16px;">Hablemos de tu próximo viaje.</h1>
+          <p class="description">Escríbenos para conocer más sobre rutas, servicios, registro de conductores, soluciones empresariales o soporte general.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Grid Section -->
+    <section class="section-padding bg-dark-gradient" style="padding-top: 80px;">
+      <div class="container reveal">
+        <div class="contact-page-grid">
+          
+          <!-- Left Column: Contact Option Cards -->
+          <div class="contact-options-stack">
+            <!-- Pasajeros Card -->
+            <div class="contact-option-card">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div class="stats-strip-icon" style="flex-shrink: 0;"><i data-lucide="user"></i></div>
+                <div>
+                  <h4>Pasajeros</h4>
+                  <p>Consultas generales sobre el funcionamiento de las rutas inteligentes, reservas de asientos, reportes de objetos perdidos o estado de servicios habituales.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conductores Card -->
+            <div class="contact-option-card">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div class="stats-strip-icon" style="flex-shrink: 0;"><i data-lucide="award"></i></div>
+                <div>
+                  <h4>Conductores</h4>
+                  <p>Información sobre los requisitos obligatorios de registro de furgonetas en Ecuador, validación de documentos habilitantes, sistema de puntos y sorteos.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empresas Card -->
+            <div class="contact-option-card">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div class="stats-strip-icon" style="flex-shrink: 0;"><i data-lucide="building-2"></i></div>
+                <div>
+                  <h4>Empresas</h4>
+                  <p>Soluciones personalizadas de movilidad corporativa para colaboradores, traslados especiales, facturación agrupada y herramientas web empresariales.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Comunidad Card -->
+            <div class="contact-option-card">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div class="stats-strip-icon" style="flex-shrink: 0;"><i data-lucide="users"></i></div>
+                <div>
+                  <h4>Comunidad</h4>
+                  <p>Información sobre el programa de incentivos GoPoints™, ExpressPass™ proyectado y promociones especiales del ecosistema.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Commercial Form -->
+          <div class="contact-form-container" id="formulario-contacto">
+            <h3>Envíanos un mensaje</h3>
+            <p class="form-subtitle">Completa el siguiente formulario comercial y un asesor especializado te responderá a la brevedad.</p>
+            
+            <form id="contact-commercial-form" class="contact-form">
+              <div style="display: flex; flex-direction: column; gap: 20px;">
+                <!-- Nombre -->
+                <div class="input-group">
+                  <label for="contact-name">Nombre completo</label>
+                  <input type="text" id="contact-name" class="input-field" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <!-- Correo -->
+                <div class="input-group">
+                  <label for="contact-email">Correo electrónico</label>
+                  <input type="email" id="contact-email" class="input-field" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="input-group">
+                  <label for="contact-phone">Teléfono de contacto (Opcional)</label>
+                  <input type="tel" id="contact-phone" class="input-field" placeholder="Ej: 0987654321">
+                </div>
+
+                <!-- Dos selectores en grid -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                  <!-- Tipo de Usuario -->
+                  <div class="input-group">
+                    <label for="contact-user-type">Tipo de usuario</label>
+                    <select id="contact-user-type" class="input-field" required style="height: 48px;">
+                      <option value="" disabled selected hidden>Selecciona...</option>
+                      <option value="Pasajero">Pasajero</option>
+                      <option value="Conductor">Conductor</option>
+                      <option value="Empresa">Empresa</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+
+                  <!-- Motivo de Contacto -->
+                  <div class="input-group">
+                    <label for="contact-reason">Motivo de contacto</label>
+                    <select id="contact-reason" class="input-field" required style="height: 48px;">
+                      <option value="" disabled selected hidden>Selecciona...</option>
+                      <option value="Consulta sobre una ruta">Consulta sobre una ruta</option>
+                      <option value="Información de servicios">Información de servicios</option>
+                      <option value="Registro de conductor">Registro de conductor</option>
+                      <option value="Soluciones empresariales">Soluciones empresariales</option>
+                      <option value="GoPoints y comunidad">GoPoints y comunidad</option>
+                      <option value="Consulta general">Consulta general</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="input-group">
+                  <label for="contact-message">Mensaje</label>
+                  <textarea id="contact-message" class="input-field" style="min-height: 120px; resize: vertical;" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" style="padding: 14px 28px; font-weight: 700; width: 100%;">Enviar mensaje</button>
+              </div>
+            </form>
+
+            <!-- Success/Pending Warning Box (Hidden by default, shown by JS) -->
+            <div id="contact-form-message" class="comunidad-warning-box" style="display: none; margin-top: 24px; border-left-color: #EF4444; background: rgba(239, 68, 68, 0.05); color: #FFF;">
+              <i data-lucide="alert-triangle" style="color: #EF4444; float: left; margin-right: 12px; width: 20px; height: 20px;"></i>
+              <span><strong>Aviso de Integración:</strong> La integración de este formulario de contacto comercial está pendiente de configuración en el servidor de backend de ExpressGO. Tu mensaje no ha podido ser enviado.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span>ExpressGO</span><span class="logo-dot"></span>
+          </a>
+          <p style="font-size: 14px; color: var(--color-gray); line-height: 1.6;">ExpressGO es una APP de movilidad inteligente que conecta pasajeros, furgonetas y empresas mediante rutas optimizadas en Ecuador.</p>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook ExpressGO" target="_blank" rel="noopener"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+            <a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram ExpressGO" target="_blank" rel="noopener"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+            <a href="https://www.tiktok.com" class="social-icon-btn" aria-label="TikTok ExpressGO" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="https://www.linkedin.com" class="social-icon-btn" aria-label="LinkedIn ExpressGO" target="_blank" rel="noopener"><i data-lucide="linkedin" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Movilidad</span>
+          <ul class="footer-links">
+            <li><a href="index.html#nosotros">Qué es ExpressGO</a></li>
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Servicios</span>
+          <ul class="footer-links">
+            <li><a href="index.html#taxi-ruta">Taxi Ruta Inteligente</a></li>
+            <li><a href="servicios.html#express-cargo">Express Cargo</a></li>
+            <li><a href="servicios.html#express-mujer">Express Mujer</a></li>
+            <li><a href="servicios.html#pettrip">PetTrip</a></li>
+            <li><a href="servicios.html#movepack">MovePack</a></li>
+            <li><a href="servicios.html#escapia">Escapia</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <ul class="footer-links">
+            <li><a href="#footer">Política de privacidad</a></li>
+            <li><a href="#footer">Términos y condiciones</a></li>
+            <li><a href="#footer">Uso de datos personales</a></li>
+            <li><a href="#footer">Política de cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2026 ExpressGO. Todos los derechos reservados.</span>
+        <span style="font-size: 13px; color: var(--color-gray);">Quito - Guayaquil - Cuenca - Manta, Ecuador</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Support Widget -->
+  <div class="support-widget" id="support-widget">
+    <div class="support-tooltip">¿Necesitas ayuda?</div>
+    <button class="support-btn" id="support-floating-button" aria-label="Abrir soporte técnico" aria-haspopup="true" aria-expanded="false">
+      <i data-lucide="message-circle"></i>
+      <span class="support-btn-text">¿Necesitas ayuda?</span>
+    </button>
+    
+    <!-- Support Panel -->
+    <div class="support-panel" id="support-panel" aria-hidden="true">
+      <div class="support-panel-header">
+        <h3>Hola, ¿cómo podemos ayudarte?</h3>
+        <button class="support-panel-close" id="support-panel-close" aria-label="Cerrar soporte">&times;</button>
+      </div>
+      <div class="support-panel-body">
+        <!-- Step 1: Support Categories -->
+        <div class="support-options-list" id="support-options-list">
+          <p style="font-size: 14px; margin-bottom: 16px; color: var(--color-text-light);">Selecciona el tipo de ayuda que necesitas:</p>
+          <button class="support-option-btn" data-category="ruta">
+            <i data-lucide="route"></i>
+            <span>Dudas sobre una ruta</span>
+          </button>
+          <button class="support-option-btn" data-category="registro">
+            <i data-lucide="user"></i>
+            <span>Problemas con mi registro</span>
+          </button>
+          <button class="support-option-btn" data-category="soporte">
+            <i data-lucide="wrench"></i>
+            <span>Soporte técnico</span>
+          </button>
+          <button class="support-option-btn" data-category="general">
+            <i data-lucide="help-circle"></i>
+            <span>Consulta general</span>
+          </button>
+        </div>
+        
+        <!-- Step 2: Support Form -->
+        <div class="support-form-container" id="support-form-container">
+          <button class="support-back-btn" id="support-back-btn"><i data-lucide="chevron-left" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i> Volver</button>
+          <h4 id="support-category-title">Consulta</h4>
+          <form id="support-internal-form">
+            <input type="hidden" id="support-category-hidden" value="general">
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+              <div class="input-group">
+                <label for="sup-name" style="font-size: 11px;">Nombre</label>
+                <input type="text" id="sup-name" class="input-field" style="padding: 8px 12px;" placeholder="Tu nombre" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-email" style="font-size: 11px;">Correo electrónico</label>
+                <input type="email" id="sup-email" class="input-field" style="padding: 8px 12px;" placeholder="correo@ejemplo.com" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-phone" style="font-size: 11px;">Teléfono</label>
+                <input type="tel" id="sup-phone" class="input-field" style="padding: 8px 12px;" placeholder="Ej: 0987654321" required>
+              </div>
+              <div class="input-group">
+                <label for="sup-user-type" style="font-size: 11px;">Tipo de usuario</label>
+                <select id="sup-user-type" class="input-field" style="padding: 8px 12px; height: 42px;">
+                  <option value="pasajero">Pasajero</option>
+                  <option value="conductor">Conductor</option>
+                  <option value="empresa">Empresa</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="sup-desc" style="font-size: 11px;">Descripción del problema</label>
+                <textarea id="sup-desc" class="input-field" style="padding: 8px 12px; min-height: 80px; resize: vertical;" placeholder="Describe tu problema o consulta..." required></textarea>
+              </div>
+              <div class="input-group">
+                <label for="sup-file" style="font-size: 11px;">Adjuntar captura (opcional)</label>
+                <input type="file" id="sup-file" class="input-field" style="padding: 6px 12px; font-size: 12px;" accept="image/*">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; min-height: 40px; padding: 10px;">Enviar solicitud</button>
+          </form>
+          
+          <!-- Success State -->
+          <div class="form-success-message" id="support-success-message">
+            <div class="form-success-icon" style="width: 48px; height: 48px; margin-bottom: 16px;"><i data-lucide="check-circle-2"></i></div>
+            <h3 style="font-size: 18px; margin-bottom: 8px;">¡Solicitud enviada!</h3>
+            <p style="font-size: 13px; line-height: 1.5; color: var(--color-text-light);">Recibimos tu solicitud. El equipo de ExpressGO se pondrá en contacto contigo.</p>
+            <button type="button" class="btn btn-secondary" id="support-reset-btn" style="min-height: 36px; padding: 8px 16px; font-size: 12px;">Nueva consulta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
