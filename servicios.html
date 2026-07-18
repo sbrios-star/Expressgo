@@ -31,8 +31,8 @@
           <li><a href="index.html" class="nav-link">Inicio</a></li>
           <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
           <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
-          <li><a href="conductores.html" class="nav-link">Conductores</a></li>
-          <li><a href="comunidad.html" class="nav-link">Comunidad</a></li>
+          <li><a href="comunidad.html#conductores" class="nav-link">Conductores</a></li>
+          <li><a href="comunidad.html#comunidad" class="nav-link">Comunidad</a></li>
           <li><a href="contacto.html" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
@@ -59,8 +59,8 @@
       <li><a href="index.html" class="nav-link">Inicio</a></li>
       <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
       <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
-      <li><a href="conductores.html" class="nav-link">Conductores</a></li>
-      <li><a href="comunidad.html" class="nav-link">Comunidad</a></li>
+      <li><a href="comunidad.html#conductores" class="nav-link">Conductores</a></li>
+      <li><a href="comunidad.html#comunidad" class="nav-link">Comunidad</a></li>
       <li><a href="contacto.html" class="nav-link">Contacto</a></li>
     </ul>
     <div class="nav-actions">
@@ -102,7 +102,7 @@
             </div>
             <!-- Collage item 2: Conductora / Mujer -->
             <div class="collage-item conductora" aria-label="Conductora profesional Express Mujer">
-              <span class="collage-icon">👩‍✈️</span>
+              <span class="collage-icon">👩✈️</span>
               <span class="collage-text">Express Mujer</span>
             </div>
             <!-- Collage item 3: Mascota -->
@@ -637,94 +637,213 @@
     </div>
   </footer>
 
-  <!-- Floating Support Widget -->
-  <div class="support-widget" id="support-widget">
-    <div class="support-tooltip">¿Necesitas ayuda?</div>
-    <button class="support-btn" id="support-btn" aria-label="Abrir soporte técnico" aria-haspopup="true" aria-expanded="false">
-      <i data-lucide="circle-help"></i>
-    </button>
-    
-    <!-- Support Panel -->
-    <div class="support-panel" id="support-panel" aria-hidden="true">
-      <div class="support-panel-header">
-        <h3>Soporte ExpressGO</h3>
-        <button class="support-panel-close" id="support-panel-close" aria-label="Cerrar soporte">&times;</button>
-      </div>
-      <div class="support-panel-body">
-        <!-- Step 1: Support Categories -->
-        <div class="support-options-list" id="support-options-list">
-          <p style="font-size: 14px; margin-bottom: 16px; color: var(--color-text-light);">Selecciona el tipo de ayuda que necesitas:</p>
-          <button class="support-option-btn" data-category="ruta">
-            <i data-lucide="route"></i>
-            <span>Dudas sobre una ruta</span>
-          </button>
-          <button class="support-option-btn" data-category="registro">
-            <i data-lucide="user-round"></i>
-            <span>Problemas con mi registro</span>
-          </button>
-          <button class="support-option-btn" data-category="tecnico">
-            <i data-lucide="wrench"></i>
-            <span>Soporte técnico</span>
-          </button>
-          <button class="support-option-btn" data-category="general">
-            <i data-lucide="message-circle-question"></i>
-            <span>Consulta general</span>
-          </button>
-        </div>
-        
-        <!-- Step 2: Support Form -->
-        <div class="support-form-container" id="support-form-container">
-          <button class="support-back-btn" id="support-back-btn"><i data-lucide="chevron-left" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i> Volver</button>
-          <h4 id="support-category-title">Consulta</h4>
-          <form id="support-internal-form">
-            <input type="hidden" id="support-category-hidden" value="general">
-            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
-              <div class="input-group">
-                <label for="sup-name" style="font-size: 11px;">Nombre</label>
-                <input type="text" id="sup-name" class="input-field" style="padding: 8px 12px;" placeholder="Tu nombre" required>
-              </div>
-              <div class="input-group">
-                <label for="sup-email" style="font-size: 11px;">Correo electrónico</label>
-                <input type="email" id="sup-email" class="input-field" style="padding: 8px 12px;" placeholder="correo@ejemplo.com" required>
-              </div>
-              <div class="input-group">
-                <label for="sup-phone" style="font-size: 11px;">Teléfono</label>
-                <input type="tel" id="sup-phone" class="input-field" style="padding: 8px 12px;" placeholder="Ej: 0987654321" required>
-              </div>
-              <div class="input-group">
-                <label for="sup-user-type" style="font-size: 11px;">Tipo de usuario</label>
-                <select id="sup-user-type" class="input-field" style="padding: 8px 12px; height: 42px;">
-                  <option value="pasajero">Pasajero</option>
-                  <option value="conductor">Conductor</option>
-                  <option value="empresa">Empresa</option>
-                </select>
-              </div>
-              <div class="input-group">
-                <label for="sup-desc" style="font-size: 11px;">Descripción del problema</label>
-                <textarea id="sup-desc" class="input-field" style="padding: 8px 12px; min-height: 80px; resize: vertical;" placeholder="Describe tu problema o consulta..." required></textarea>
-              </div>
-              <div class="input-group">
-                <label for="sup-file" style="font-size: 11px;">Adjuntar captura (opcional)</label>
-                <input type="file" id="sup-file" class="input-field" style="padding: 6px 12px; font-size: 12px;" accept="image/*">
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%; min-height: 40px; padding: 10px;">Enviar solicitud</button>
-          </form>
-          
-          <!-- Success State -->
-          <div class="form-success-message" id="support-success-message">
-            <div class="form-success-icon" style="width: 48px; height: 48px; margin-bottom: 16px;"><i data-lucide="check-circle-2"></i></div>
-            <h3 style="font-size: 18px; margin-bottom: 8px;">¡Solicitud enviada!</h3>
-            <p style="font-size: 13px; line-height: 1.5; color: var(--color-text-light);">Recibimos tu solicitud. El equipo de ExpressGO se pondrá en contacto contigo.</p>
-            <button type="button" class="btn btn-secondary" id="support-reset-btn" style="min-height: 36px; padding: 8px 16px; font-size: 12px;">Nueva consulta</button>
-          </div>
-        </div>
-      </div>
+<!-- Floating Support Widget -->
+<div class="support-widget" id="support-widget">
+
+  <div class="support-tooltip">¿Necesitas ayuda?</div>
+
+  <button
+    class="support-btn"
+    id="support-floating-button"
+    type="button"
+    aria-label="Abrir soporte técnico"
+    aria-haspopup="true"
+    aria-expanded="false"
+  >
+    <i data-lucide="circle-help"></i>
+  </button>
+
+  <!-- Support Panel -->
+  <div class="support-panel" id="support-panel" aria-hidden="true">
+
+    <div class="support-panel-header">
+      <h3>Soporte ExpressGO</h3>
+
+      <button
+        class="support-panel-close"
+        id="support-panel-close"
+        type="button"
+        aria-label="Cerrar soporte"
+      >
+        &times;
+      </button>
     </div>
+
+    <div class="support-panel-body">
+
+      <!-- Step 1: Support Categories -->
+      <div class="support-options-list" id="support-options-list">
+
+        <p style="font-size: 14px; margin-bottom: 16px; color: var(--color-text-light);">
+          Selecciona el tipo de ayuda que necesitas:
+        </p>
+
+        <button type="button" class="support-option-btn" data-category="ruta">
+          <i data-lucide="route"></i>
+          <span>Dudas sobre una ruta</span>
+        </button>
+
+        <button type="button" class="support-option-btn" data-category="registro">
+          <i data-lucide="user-round"></i>
+          <span>Problemas con mi registro</span>
+        </button>
+
+        <button type="button" class="support-option-btn" data-category="tecnico">
+          <i data-lucide="wrench"></i>
+          <span>Soporte técnico</span>
+        </button>
+
+        <button type="button" class="support-option-btn" data-category="general">
+          <i data-lucide="message-circle-question"></i>
+          <span>Consulta general</span>
+        </button>
+
+      </div>
+
+      <!-- Step 2: Support Form -->
+      <div class="support-form-container" id="support-form-container">
+
+        <button type="button" class="support-back-btn" id="support-back-btn">
+          <i
+            data-lucide="chevron-left"
+            style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"
+          ></i>
+          Volver
+        </button>
+
+        <h4 id="support-category-title">Consulta</h4>
+
+        <form id="support-internal-form">
+
+          <input
+            type="hidden"
+            id="support-category-hidden"
+            value="general"
+          >
+
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+
+            <div class="input-group">
+              <label for="sup-name" style="font-size: 11px;">Nombre</label>
+              <input
+                type="text"
+                id="sup-name"
+                class="input-field"
+                style="padding: 8px 12px;"
+                placeholder="Tu nombre"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="sup-email" style="font-size: 11px;">Correo electrónico</label>
+              <input
+                type="email"
+                id="sup-email"
+                class="input-field"
+                style="padding: 8px 12px;"
+                placeholder="correo@ejemplo.com"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="sup-phone" style="font-size: 11px;">Teléfono</label>
+              <input
+                type="tel"
+                id="sup-phone"
+                class="input-field"
+                style="padding: 8px 12px;"
+                placeholder="Ej: 0987654321"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="sup-user-type" style="font-size: 11px;">Tipo de usuario</label>
+              <select
+                id="sup-user-type"
+                class="input-field"
+                style="padding: 8px 12px; height: 42px;"
+              >
+                <option value="pasajero">Pasajero</option>
+                <option value="conductor">Conductor</option>
+                <option value="empresa">Empresa</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="sup-desc" style="font-size: 11px;">Descripción del problema</label>
+              <textarea
+                id="sup-desc"
+                class="input-field"
+                style="padding: 8px 12px; min-height: 80px; resize: vertical;"
+                placeholder="Describe tu problema o consulta..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="input-group">
+              <label for="sup-file" style="font-size: 11px;">Adjuntar captura (opcional)</label>
+              <input
+                type="file"
+                id="sup-file"
+                class="input-field"
+                style="padding: 6px 12px; font-size: 12px;"
+                accept="image/*"
+              >
+            </div>
+
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 100%; min-height: 40px; padding: 10px;"
+          >
+            Enviar solicitud
+          </button>
+
+        </form>
+
+        <!-- Success State -->
+        <div class="form-success-message" id="support-success-message">
+
+          <div
+            class="form-success-icon"
+            style="width: 48px; height: 48px; margin-bottom: 16px;"
+          >
+            <i data-lucide="check-circle-2"></i>
+          </div>
+
+          <h3 style="font-size: 18px; margin-bottom: 8px;">
+            ¡Solicitud enviada!
+          </h3>
+
+          <p style="font-size: 13px; line-height: 1.5; color: var(--color-text-light);">
+            Recibimos tu solicitud. El equipo de ExpressGO se pondrá en contacto contigo.
+          </p>
+
+          <button
+            type="button"
+            class="btn btn-secondary"
+            id="support-reset-btn"
+            style="min-height: 36px; padding: 8px 16px; font-size: 12px;"
+          >
+            Nueva consulta
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
-  <script src="servicios.js"></script>
+</div>
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="servicios.js"></script>
 </body>
 </html>
